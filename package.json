@@ -20,5 +20,9 @@
   },
   "devDependencies": {
     "sass": "^1.88.0"
+  },
+  "dependencies": {
+    "swiper": "^11.2.6",
+    "typewriter-effect": "^2.22.0"
   }
 }
