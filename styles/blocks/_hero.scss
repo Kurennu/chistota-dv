@@ -2,6 +2,11 @@
 
 .hero{
   padding: rem(40) rem(70);
+
+  &__main{
+    display: flex;
+    justify-content: space-between;
+  }
   &__body{
     display: flex;
     flex-direction: column;

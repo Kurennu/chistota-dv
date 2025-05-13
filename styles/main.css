@@ -316,7 +316,7 @@ a[class] {
   padding-block: 2rem;
   font-family: var(--font-family-accent);
   position: sticky;
-  z-index: 100;
+  z-index: 200;
   top: 0;
   background-color: var(--color-white);
   border-bottom: 1px solid #E5E5E5;
@@ -347,6 +347,10 @@ a[class] {
 
 .hero {
   padding: 2.5rem 4.375rem;
+}
+.hero__main {
+  display: flex;
+  justify-content: space-between;
 }
 .hero__body {
   display: flex;
@@ -416,6 +420,18 @@ a[class] {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   text-align: center;
 }
+@media (any-hover: hover) {
+  .button:hover {
+    background-color: var(--color-white);
+    color: var(--color-blue);
+  }
+}
+@media (any-hover: none) {
+  .button:active {
+    background-color: var(--color-white);
+    color: var(--color-blue);
+  }
+}
 
 .video-slider {
   width: 100%;
@@ -456,14 +472,24 @@ a[class] {
   padding: 3.125rem 1rem;
 }
 .about__inner {
+  position: relative;
   padding-block: 6.6875rem;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  background: var(--color-black) url("../../images/about/background.png") 0 0/cover no-repeat;
-  background-color: var(--color-black);
   border-radius: 1.25rem;
+  overflow: hidden;
+  padding: 3.125rem 1rem;
+  background-color: var(--color-black);
+}
+.about__inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../../images/about/background.png") 0 0/cover no-repeat;
+  z-index: 100;
+  pointer-events: none;
 }
 .about__header {
   font-size: 8.75rem;
@@ -508,26 +534,21 @@ a[class] {
   top: 9%;
 }
 
-.carousel {
-  overflow: hidden;
-}
 .carousel__track {
+  bottom: 4.125rem;
+  position: relative;
   display: flex;
-  gap: 0.5rem;
+  gap: 1.25rem;
   will-change: transform;
+  transition: transform 0.5s linear;
 }
 .carousel__slide {
+  position: relative;
   flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: auto;
-}
-.carousel__image {
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
+  width: 3.9375rem;
 }
 
 /*# sourceMappingURL=main.css.map */

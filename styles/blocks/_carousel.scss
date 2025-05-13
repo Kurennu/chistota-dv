@@ -1,26 +1,21 @@
 @use "../helpers" as *;
 
 .carousel {
-  overflow: hidden;
-
   &__track {
+    bottom: rem(66);
+    position: relative;
     display: flex;
-    gap: rem(8);
+    gap: rem(20);
     will-change: transform;
+    transition: transform 0.5s linear;
   }
 
   &__slide {
+    position: relative;
     flex: 0 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto;
-  }
-
-  &__image {
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    display: block;
+    width: rem(63);
   }
 }
