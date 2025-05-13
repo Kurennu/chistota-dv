@@ -1,0 +1,24 @@
+{
+  "name": "chistota-dv",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Kurennu/chistota-dv#readme",
+  "bugs": {
+    "url": "https://github.com/Kurennu/chistota-dv/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kurennu/chistota-dv.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch": "sass --watch ."
+  },
+  "devDependencies": {
+    "sass": "^1.88.0"
+  }
+}
