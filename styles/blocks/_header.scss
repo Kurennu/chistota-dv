@@ -1,0 +1,44 @@
+@use "../helpers" as *;
+
+.header{
+  padding-block: rem(32);
+  font-family: var(--font-family-accent);
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background-color: var(--color-white);
+  border-bottom: 1px solid #E5E5E5;
+
+  &__body {
+    &-inner{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__overlay{
+    display: contents;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu{
+    &-list{
+      display: flex;
+      column-gap: rem(40);
+      font-size: rem(24);
+
+    }
+  }
+
+  &__contacts{
+    display: flex;
+    align-items: center;
+    column-gap: rem(24);
+
+    &-link{
+      font-size: rem(24);
+    }
+  }
+}

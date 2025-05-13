@@ -13,6 +13,7 @@ body{
   flex-direction: column;
   color: var(--color-gray-300);
   background-color: var(--color-white);
+  font-weight: 400;
 }
 main{
   flex-grow: 1;
@@ -27,4 +28,26 @@ h4 {
 h2,
 h5 {
   font-weight: 600;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a{
+  color: inherit;
+
+  @include hover{
+    color: var(--color-blue);
+  }
+
+  &[class]{
+    text-decoration: none;
+  }
 }

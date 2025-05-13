@@ -267,6 +267,7 @@ body {
   flex-direction: column;
   color: var(--color-gray-300);
   background-color: var(--color-white);
+  font-weight: 400;
 }
 
 main {
@@ -282,6 +283,66 @@ h4 {
 h2,
 h5 {
   font-weight: 600;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: inherit;
+}
+@media (any-hover: hover) {
+  a:hover {
+    color: var(--color-blue);
+  }
+}
+@media (any-hover: none) {
+  a:active {
+    color: var(--color-blue);
+  }
+}
+a[class] {
+  text-decoration: none;
+}
+
+.header {
+  padding-block: 2rem;
+  font-family: var(--font-family-accent);
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background-color: var(--color-white);
+  border-bottom: 1px solid #E5E5E5;
+}
+.header__body-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__overlay {
+  display: contents;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu-list {
+  display: flex;
+  column-gap: 2.5rem;
+  font-size: 1.5rem;
+}
+.header__contacts {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.header__contacts-link {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

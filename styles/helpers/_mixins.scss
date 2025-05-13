@@ -16,3 +16,19 @@
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
 }
+
+@mixin hover($hasActiveEffectOnMobile: true){
+  @media (any-hover: hover){
+    &:hover{
+      @content
+    }
+  }
+
+  @if (&hasActiveEffectOnMobile){
+    @media (any-hover: none){
+      &:active{
+        @content
+      }
+    }
+  }
+}
