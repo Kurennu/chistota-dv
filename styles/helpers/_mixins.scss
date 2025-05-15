@@ -32,3 +32,16 @@
     }
   }
 }
+
+@mixin card-shadow($index) {
+  $shadow-opacity: 0.1 + ($index * 0.03);
+  $shadow-color: rgba(0, 100 - ($index * 20), 255, $shadow-opacity);
+
+  box-shadow: 0 4px 20px $shadow-color,
+  0 -9px 0 -1px var(--color-blue-300);
+
+  &.is-active {
+    box-shadow: 0 8px 30px $shadow-color,
+    0 -9px 0 -1px var(--color-blue-300);
+  }
+}

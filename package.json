@@ -22,6 +22,9 @@
     "sass": "^1.88.0"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
+    "gsap": "^3.13.0",
+    "lenis": "^1.3.2",
     "swiper": "^11.2.6",
     "typewriter-effect": "^2.22.0"
   }

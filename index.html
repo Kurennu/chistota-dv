@@ -7,11 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Чистота ДВ</title>
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper @11/swiper-bundle.min.css" />
     <script src="./scripts/main.js" type="module" defer></script>
+    <script src="./scripts/service.js" type="module" defer></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
     <header class="header">
@@ -141,19 +140,6 @@
                         Заказать уборку
                     </button>
                 </div>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" data-video-id="u8GzIxBWUJE">
-                            <div class="player-placeholder"></div>
-                        </div>
-                        <div class="swiper-slide" data-video-id="u8GzIxBWUJE">
-                            <div class="player-placeholder"></div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
             </div>
 
         </section>
@@ -182,106 +168,391 @@
                 </div>
                 <p class="about__subheader">— клининг с безупречной репутацией.</br> С 2015 года создаем идеальную чистоту <span>для домов</span> и <span>бизнеса</span>, используя профессиональные методы и  премиальную химию.</p>
                 <button class="about__button button">Заказать уборку</button>
-                <div class="about__carousel carousel__track">
-                    <div class="carousel__slide">
-                        <img src="./images/about/sber.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/selhoz.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/gazprom.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/dolinsk.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/raif.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/rusgidro.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/sistema.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/coffeemachine.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/dns.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/rosswti.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/zilcap.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/blidex.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/bork.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/morskoitrust.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/kodolovgroup.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/dalpribor.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
+                <div class="about__carousel carousel__wrapper">
+                    <div class="carousel__track">
+                        <div class="carousel__slide"><img src="./images/about/sber.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/selhoz.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/gazprom.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/dolinsk.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/raif.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/rusgidro.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/sistema.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/coffeemachine.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/dns.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/rosswti.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/zilcap.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/blidex.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/bork.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/morskoitrust.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/kodolovgroup.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/dalpribor.png" alt="" loading="lazy"></div>
 
-
-                    <div class="carousel__slide">
-                        <img src="./images/about/sber.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/selhoz.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/gazprom.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/dolinsk.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/raif.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/rusgidro.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/sistema.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/coffeemachine.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/dns.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/rosswti.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/zilcap.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/blidex.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/bork.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/morskoitrust.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/kodolovgroup.png" alt="" class="carousel__image" loading="lazy">
-                    </div>
-                    <div class="carousel__slide">
-                        <img src="./images/about/dalpribor.png" alt="" class="carousel__image" loading="lazy">
+                        <div class="carousel__slide"><img src="./images/about/sber.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/selhoz.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/gazprom.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/dolinsk.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/raif.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/rusgidro.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/sistema.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/coffeemachine.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/dns.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/rosswti.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/zilcap.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/blidex.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/bork.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/morskoitrust.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/kodolovgroup.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/dalpribor.png" alt="" loading="lazy"></div>
                     </div>
                 </div>
+
+            </div>
+        </section>
+        <section class="service container">
+            <div class="service__inner">
+                <div class="service__title">
+                    <h5 class="service__header">Наши <span>Услуги</span></h5>
+                    <p class="service__subheader">Профессиональный клининг, который говорит сам за себя. <br> услуги — это ваше время, комфорт и безупречный результат.</p>
+                </div>
+                <div class="service__cards-wrapper">
+                    <div class="service__card">
+                        <div class="service__card-body">
+                            <div class="service__card-main">
+                                <h6 class="service__card-header">Генеральная уборка</h6>
+                                <p class="service__card-subheader">Современные технологии достигли такого уровня, что укрепление и развитие внутренней структуры не даёт нам иного выбора, кроме определения новых принципов формирования материально-технической и кадровой базы! Вот вам яркий пример современных тенденций — перспективное планирование создаёт предпосылки для экспериментов.</p>
+                                <div class="service__card-features">
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/clock.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>3-10 ч</span>
+                                    </div>
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/area.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>до 5 000 м2</span>
+                                    </div>
+
+                                </div>
+                                <div class="service__pricing">
+                                    <button class="service__button button">Заказать</button>
+                                    <p class="service__price">от 2 500₽</p>
+                                </div>
+                            </div>
+                            <div class="service__card-photo">
+                                <img
+                                        src="./images/service/room.png"
+                                        alt=""
+                                        class="service__card-img"
+                                        width="625" height="467"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-body">
+                            <div class="service__card-main">
+                                <h6 class="service__card-header">Генеральная уборка</h6>
+                                <p class="service__card-subheader">Современные технологии достигли такого уровня, что укрепление и развитие внутренней структуры не даёт нам иного выбора, кроме определения новых принципов формирования материально-технической и кадровой базы! Вот вам яркий пример современных тенденций — перспективное планирование создаёт предпосылки для экспериментов.</p>
+                                <div class="service__card-features">
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/clock.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>3-10 ч</span>
+                                    </div>
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/area.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>до 5 000 м2</span>
+                                    </div>
+
+                                </div>
+                                <div class="service__pricing">
+                                    <button class="service__button button">Заказать</button>
+                                    <p class="service__price">от 2 500₽</p>
+                                </div>
+                            </div>
+                            <div class="service__card-photo">
+                                <img
+                                        src="./images/service/room.png"
+                                        alt=""
+                                        class="service__card-img"
+                                        width="625" height="467"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-body">
+                            <div class="service__card-main">
+                                <h6 class="service__card-header">Генеральная уборка</h6>
+                                <p class="service__card-subheader">Современные технологии достигли такого уровня, что укрепление и развитие внутренней структуры не даёт нам иного выбора, кроме определения новых принципов формирования материально-технической и кадровой базы! Вот вам яркий пример современных тенденций — перспективное планирование создаёт предпосылки для экспериментов.</p>
+                                <div class="service__card-features">
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/clock.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>3-10 ч</span>
+                                    </div>
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/area.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>до 5 000 м2</span>
+                                    </div>
+
+                                </div>
+                                <div class="service__pricing">
+                                    <button class="service__button button">Заказать</button>
+                                    <p class="service__price">от 2 500₽</p>
+                                </div>
+                            </div>
+                            <div class="service__card-photo">
+                                <img
+                                        src="./images/service/room.png"
+                                        alt=""
+                                        class="service__card-img"
+                                        width="625" height="467"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-body">
+                            <div class="service__card-main">
+                                <h6 class="service__card-header">Генеральная уборка</h6>
+                                <p class="service__card-subheader">Современные технологии достигли такого уровня, что укрепление и развитие внутренней структуры не даёт нам иного выбора, кроме определения новых принципов формирования материально-технической и кадровой базы! Вот вам яркий пример современных тенденций — перспективное планирование создаёт предпосылки для экспериментов.</p>
+                                <div class="service__card-features">
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/clock.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>3-10 ч</span>
+                                    </div>
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/area.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>до 5 000 м2</span>
+                                    </div>
+
+                                </div>
+                                <div class="service__pricing">
+                                    <button class="service__button button">Заказать</button>
+                                    <p class="service__price">от 2 500₽</p>
+                                </div>
+                            </div>
+                            <div class="service__card-photo">
+                                <img
+                                        src="./images/service/room.png"
+                                        alt=""
+                                        class="service__card-img"
+                                        width="625" height="467"
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="other-carousel">
+            <h2 class="other-carousel__title">А также...</h2>
+            <div class="other-carousel__wrapper">
+                <div class="other-carousel__track other-carousel__track--top">
+
+                        <div class="other-carousel__slide">
+                            Влажная уборка
+                        </div>
+                        <div class="other-carousel__slide">
+                            После ремонта
+                        </div>
+                        <div class="other-carousel__slide">
+                            Гениральная уборка
+                        </div>
+                        <div class="other-carousel__slide">
+                            Уход за балконами
+                        </div>
+                        <div class="other-carousel__slide">
+                            Химчистка ковров
+                        </div>
+
+
+
+                        <div class="other-carousel__slide">
+                            Влажная уборка
+                        </div>
+                        <div class="other-carousel__slide">
+                            После ремонта
+                        </div>
+                        <div class="other-carousel__slide">
+                            Гениральная уборка
+                        </div>
+                        <div class="other-carousel__slide">
+                            Уход за балконами
+                        </div>
+                        <div class="other-carousel__slide">
+                            Химчистка ковров
+                        </div>
+
+                </div>
+                <div class="other-carousel__track other-carousel__track--bottom">
+
+                    <div class="other-carousel__slide">
+                        Офисы
+                    </div>
+                    <div class="other-carousel__slide">
+                        Террасы
+                    </div>
+                    <div class="other-carousel__slide">
+                        Дома
+                    </div>
+                    <div class="other-carousel__slide">
+                        Яхты
+                    </div>
+                    <div class="other-carousel__slide">
+                        Торговый центр
+                    </div>
+                    <div class="other-carousel__slide">
+                        Заводы
+                    </div>
+                    <div class="other-carousel__slide">
+                        Корабли
+                    </div>
+
+                    <div class="other-carousel__slide">
+                        Офисы
+                    </div>
+                    <div class="other-carousel__slide">
+                        Террасы
+                    </div>
+                    <div class="other-carousel__slide">
+                        Дома
+                    </div>
+                    <div class="other-carousel__slide">
+                        Яхты
+                    </div>
+                    <div class="other-carousel__slide">
+                        Торговый центр
+                    </div>
+                    <div class="other-carousel__slide">
+                        Заводы
+                    </div>
+                    <div class="other-carousel__slide">
+                        Корабли
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="cta__inner container">
+                <div class="cta__main">
+                    <div class="cta__title">
+                        <h5 class="cta__header">Закажите уборку <br> сегодня — получите <br> скидку 15%!</h5>
+                        <div class="cta__subheader">Оставьте заявку до конца недели, и наш специалист <br> приедет в удобное время.</div>
+                    </div>
+                    <div class="cta__socials">
+                        <p class="cta__socials-title">Подписывайся на нас в социальных сетях! <br> Будь вкурсе всех событий</p>
+                        <div class="cta__socials-wrapper">
+                            <a href="" class="cta__socials-logo">
+                                <img
+                                        src="./icons/instagram.svg"
+                                        alt="Instagram"
+                                        class="cta__logo"
+                                        width="50" height="50"
+                                >
+                            </a>
+                            <a href="" class="cta__socials-logo">
+                                <img
+                                        src="./icons/telegram.svg"
+                                        alt="Telegram"
+                                        class="cta__logo"
+                                        width="50" height="50"
+                                >
+                            </a>
+                            <a href="" class="cta__socials-logo">
+                                <img
+                                        src="./icons/VK.svg"
+                                        alt="Вконтакте"
+                                        class="cta__logo"
+                                        width="50" height="50"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form action="/" class="cta__form">
+                    <h3 class="cta__form-title">Подсчет <span>услуги</span></h3>
+                    <div class="cta__fields">
+                        <div class="cta__cell field">
+                            <input
+                                    class="cta__cell-input"
+                                    placeholder="Квадратура"
+                            />
+                        </div>
+                        <div class="cta__cell field">
+                            <input
+                                    class="cta__cell-input"
+                                    placeholder="Выбор услуги"
+                            />
+                        </div>
+                        <div class="cta__cell field">
+                            <input
+                                    class="cta__cell-input"
+                                    placeholder="Номер телефона"
+                            />
+                        </div>
+                        <div class="cta__cell field">
+                            <input
+                                    class="cta__cell-input"
+                                    placeholder="Имя"
+                            />
+                        </div>
+                        <div class="cta__cell cta__cell--long field">
+                            <input
+                                    class="cta__cell-input cta__cell-input--long"
+                                    placeholder="Уточните свой вопрос"
+                            />
+                        </div>
+                        <div class="cta__policy">
+                            <input type="checkbox" name="" id="policy">
+                            <label for="policy" class="field__placeholder">
+                                С правилами <span><a href="/">политики конфиденциальности</a></span> ознакомлен
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cta__action">
+                        <button type="submit" class="button cta__button">Оставить заявку</button>
+                        <p class="cta__price">Итого: 2 500₽</p>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

@@ -1,10 +1,8 @@
 import { initTypewriter } from './typewriter.js';
-import { onYouTubeIframeAPIReady } from './videoSlider.js';
-import { initCarousel } from './carousel.js';
+import { initServiceCards } from './service.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
     initTypewriter();
-    initCarousel();
-    onYouTubeIframeAPIReady();
+    initServiceCards();
 });

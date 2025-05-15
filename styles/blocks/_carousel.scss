@@ -1,10 +1,15 @@
 @use "../helpers" as *;
 
 .carousel {
+  &__wrapper{
+    width: 100%;
+  }
+
   &__track {
     bottom: rem(66);
     position: relative;
     display: flex;
+    animation: scroll-carousel 60s linear infinite;
     gap: rem(20);
     will-change: transform;
     transition: transform 0.5s linear;
@@ -17,5 +22,19 @@
     align-items: center;
     justify-content: center;
     width: rem(63);
+
+    img{
+      height: rem(63);
+      object-fit: contain;
+    }
+  }
+}
+
+@keyframes scroll-carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
