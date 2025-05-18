@@ -8,7 +8,7 @@
     <title>Чистота ДВ</title>
     <link rel="stylesheet" href="./styles/main.css">
     <script src="./scripts/main.js" type="module" defer></script>
-    <script src="./scripts/service.js" type="module" defer></script>
+    <script src="./scripts/casesSwiper.js" type="module" defer></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
@@ -136,7 +136,7 @@
                             </button>
                         </div>
                     </div>
-                    <button class="hero__button button button--arrow">
+                    <button class="hero__button button">
                         Заказать уборку
                     </button>
                 </div>
@@ -508,43 +508,46 @@
                         </div>
                     </div>
                 </div>
+
                 <form action="/" class="cta__form">
                     <h3 class="cta__form-title">Подсчет <span>услуги</span></h3>
                     <div class="cta__fields">
-                        <div class="cta__cell field">
+                        <div class="cta__cell">
                             <input
                                     class="cta__cell-input"
                                     placeholder="Квадратура"
                             />
                         </div>
                         <div class="cta__cell field">
-                            <input
-                                    class="cta__cell-input"
-                                    placeholder="Выбор услуги"
-                            />
+                            <select class="cta__cell-input cta__cell-select">
+                                <option value="" disabled selected>Выбор услуги</option>
+                                <option value="service1">Генеральная уборка</option>
+                                <option value="service2">Уборка после ремонта </option>
+                                <option value="service3">Мойка окон</option>
+                            </select>
                         </div>
-                        <div class="cta__cell field">
+                        <div class="cta__cell">
                             <input
                                     class="cta__cell-input"
                                     placeholder="Номер телефона"
                             />
                         </div>
-                        <div class="cta__cell field">
+                        <div class="cta__cell">
                             <input
                                     class="cta__cell-input"
                                     placeholder="Имя"
                             />
                         </div>
-                        <div class="cta__cell cta__cell--long field">
+                        <div class="cta__cell cta__cell--long">
                             <input
                                     class="cta__cell-input cta__cell-input--long"
                                     placeholder="Уточните свой вопрос"
                             />
                         </div>
                         <div class="cta__policy">
-                            <input type="checkbox" name="" id="policy">
-                            <label for="policy" class="field__placeholder">
-                                С правилами <span><a href="/">политики конфиденциальности</a></span> ознакомлен
+                            <input type="checkbox" class="cta__policy-checkbox" name="" id="policy">
+                            <label for="policy" class="cta__policy-label">
+                                С правилами <a href="/">политики конфиденциальности</a> ознакомлен
                             </label>
                         </div>
                     </div>
@@ -553,6 +556,169 @@
                         <p class="cta__price">Итого: 2 500₽</p>
                     </div>
                 </form>
+            </div>
+        </section>
+        <section class="cases">
+            <div class="cases__inner container">
+                <div class="cases__title">
+                    <h5 class="cases__header">Мы выполнили <br><span>>8 300 заказов</span></h5>
+                    <p class="cases__subheader">
+                        Посмотрите на наши <span>реальные работы</span><br>
+                        и убедитесь, что <span>мы предоставляем услуги</span><br><span>высокого качества.</span>
+                    </p>
+                </div>
+                <div class="cases__action">
+                    <form class="cases__form" action="" method="">
+                        <select class="cases__select" name="filter">
+                            <option value="">Частная недвижимость</option>
+                            <option value="">Частная недвижимость</option>
+                            <option value="">Частная недвижимость</option>
+                            <option value="">Частная недвижимость</option>
+                        </select>
+                    </form>
+                    <div class="button__wrapper">
+                        <button class="button cases__button">Связаться</button>
+                        <button class="button--arrow">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5713 8.5H1.42915" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8.50022 15.5711L15.5713 8.5L8.50022 1.42893" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="cases__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper__title">
+                                <h2 class="swiper__header">Уборка офиса</h2>
+                                <div class="service__card-features">
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/clock.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>3-10 ч</span>
+                                    </div>
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/area.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>до 5 000 м2</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <img
+                                    src="./images/cases/office.png"
+                                    alt=""
+                                    class=""
+                                    width="636" height="370"
+                            >
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__title">
+                                <h2 class="swiper__header">Уборка офиса</h2>
+                                <div class="service__card-features">
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/clock.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>3-10 ч</span>
+                                    </div>
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/area.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>до 5 000 м2</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <img
+                                    src="./images/cases/office.png"
+                                    alt=""
+                                    class=""
+                                    width="636" height="370"
+                            >
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__title">
+                                <h2 class="swiper__header">Уборка офиса</h2>
+                                <div class="service__card-features">
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/clock.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>3-10 ч</span>
+                                    </div>
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/area.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>до 5 000 м2</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <img
+                                    src="./images/cases/office.png"
+                                    alt=""
+                                    class=""
+                                    width="636" height="370"
+                            >
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__title">
+                                <h2 class="swiper__header">Уборка офиса</h2>
+                                <div class="service__card-features">
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/clock.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>3-10 ч</span>
+                                    </div>
+                                    <div class="service__card-features-item">
+                                        <img
+                                                src="./icons/service/area.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>до 5 000 м2</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <img
+                                    src="./images/cases/office.png"
+                                    alt=""
+                                    class=""
+                                    width="636" height="370"
+                            >
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
     </main>

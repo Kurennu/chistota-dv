@@ -20,4 +20,29 @@
     background-color: var(--color-white);
     color: var(--color-blue);
   }
+
+  &--arrow {
+    border-radius: 14px;
+    padding: 16px;
+    width: 55px;
+    height: 55px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    @include hover{
+      background-color: var(--color-white);
+      svg path {
+        stroke: var(--color-blue);
+      }
+    }
+  }
+
+  &__wrapper{
+    display: flex;
+    column-gap: rem(16);
+    align-items: stretch;
+  }
+
 }
