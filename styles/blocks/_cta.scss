@@ -1,7 +1,7 @@
 @use "../helpers" as *;
 
 .cta{
-  background: url("../../images/cta/background.png") 0 0 / cover no-repeat;
+  background: url("/images/cta/background.png") 0 0 / cover no-repeat;
 
   &__inner{
     padding-top: rem(70);

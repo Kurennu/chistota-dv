@@ -1,40 +1,49 @@
 import MomentumSlider from "momentum-slider";
+import photo1 from '../images/reviews/user1.png';
+import photo2 from '../images/reviews/user2.png';
+import photo3 from '../images/reviews/user3.png';
+
+import icon2gis from '../icons/2gis.png';
+import iconYandex from '../icons/Yandex.png';
+import starIcon from '../icons/star.svg';
+import commasIcon from '../icons/commas.svg';
+
 
 const reviewsData = [
     {
         name: "Анна",
         service: "Послеремонтная уборка",
         text: "Заказывали уборку после переезда — квартира засияла! Спасибо за бережное отношение к моей техник.",
-        photo: "./images/reviews/user1.png",
+        photo: photo1,
         score: 5,
         link: {
             url: "https://2gis.ru/",
             text: "Читать на 2GIS",
-            icon: "./icons/2gis.png"
+            icon: icon2gis
         }
     },
     {
         name: "Петр",
         service: "Послеремонтная уборка",
         text: "Заказывали уборку после переезда — квартира засияла! Спасибо за бережное отношение к моей техник.",
-        photo: "./images/reviews/user2.png",
+        photo: photo2,
         score: 4,
         link: {
             url: "https://2gis.ru/",
             text: "Читать на Яндекс",
-            icon: "./icons/Yandex.png"
+            icon: iconYandex
         }
     },
     {
         name: "Евгений",
         service: "Послеремонтная уборка",
         text: "Заказывали уборку после переезда — квартира засияла! Спасибо за бережное отношение к моей техник.",
-        photo: "./images/reviews/user3.png",
+        photo: photo3,
         score: 5,
         link: {
             url: "https://2gis.ru/",
             text: "Читать на 2GIS",
-            icon: "./icons/2gis.png"
+            icon: icon2gis
         }
     }
 ];
@@ -42,7 +51,7 @@ const reviewsData = [
 function createReviewSlide(review) {
     const starsCount = review.score;
     const starsHtml = Array(5).fill(0).map((_, i) => {
-        return `<img src="./icons/star.svg" class="reviews__stars_img" width="20" height="20" style="opacity:${i < starsCount ? 1 : 0.3}">`;
+        return `<img src="${starIcon}" class="reviews__stars_img" width="20" height="20" style="opacity:${i < starsCount ? 1 : 0.3}">`;
     }).join('');
 
     return `
@@ -65,7 +74,7 @@ function createReviewSlide(review) {
               </div>
             </div>
             <div class="reviews__user-commas">
-              <img src="./icons/commas.svg" alt="" class="reviews__commas" width="48" height="48">
+              <img src="${commasIcon}" alt="" class="reviews__commas" width="48" height="48">
             </div>
           </div>
           <div class="reviews__body">

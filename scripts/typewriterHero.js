@@ -7,7 +7,7 @@ export function initTypewriterHero() {
 
     new Typewriter('#typewriter', {
         loop: true,
-        delay: 100,
+        delay: 200,
         deleteSpeed: 50,
     })
 

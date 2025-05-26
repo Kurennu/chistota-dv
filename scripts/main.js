@@ -9,6 +9,7 @@ import { initDropdown } from './dropdown.js'
 import { initReviewsSlider } from './reviewsSlider.js';
 import { initServiceCarouselR } from './serviceCarouselRight.js';
 import { initServiceCarouselL } from './serviceCarouselLeft.js';
+import { initScrollWordAnimation } from'./splittingHeaders';
 
 document.addEventListener('DOMContentLoaded', () => {
     initTypewriterHero();
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initReviewsSlider();
     initServiceCarouselR();
     initServiceCarouselL();
+    initScrollWordAnimation();
 
     initDropdown({
         containerSelector: '.dropdown',
