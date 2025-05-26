@@ -1,9 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-    new Swiper('.cases__slider', {
+import { Swiper } from 'swiper';
+import 'swiper/css';
+
+export function initCasesSlider() {
+    new Swiper('.cases__swiper', {
         direction: 'horizontal',
         loop: false,
         slidesPerView: 2,
-        spaceBetween: 28,
 
         navigation: {
             nextEl: null,
@@ -13,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
         pagination: {
             el: null
         },
+
         effect: 'slide',
         speed: 500,
     });
-});
+}

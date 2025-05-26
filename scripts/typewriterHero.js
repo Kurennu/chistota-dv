@@ -1,4 +1,6 @@
-function initTypewriter() {
+import Typewriter from 'typewriter-effect/dist/core';
+
+export function initTypewriterHero() {
     const words = ['чисто', 'уютно', 'порядок', 'свежо'];
 
     if (!document.getElementById('typewriter')) return;
@@ -8,6 +10,7 @@ function initTypewriter() {
         delay: 100,
         deleteSpeed: 50,
     })
+
         .typeString(words[0])
         .pauseFor(1500)
         .deleteAll()
@@ -22,5 +25,3 @@ function initTypewriter() {
         .deleteAll()
         .start();
 }
-
-export { initTypewriter };

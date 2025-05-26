@@ -1,0 +1,50 @@
+@use "../helpers" as *;
+
+.cta-request {
+  padding: rem(70) rem(16);
+
+  &__wrapper{
+    background: var(--color-blue) url("/images/cta-request/background.png") 0 0/cover no-repeat;
+    border-radius: rem(40);
+  }
+
+  &__inner{
+    padding-block: rem(70);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__header{
+    font-weight: 600;
+    font-size: rem(80);
+    text-transform: uppercase;
+    color: var(--color-white);
+    line-height: normal;
+  }
+
+  &__action{
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(24);
+  }
+
+  &__contacts{
+    display: flex;
+    column-gap: rem(12);
+    justify-content: right;
+
+    &-item{
+      display: flex;
+      justify-content: center;
+      background-color: var(--color-white);
+      border-radius: 100%;
+      width: rem(50);
+      aspect-ratio: 1;
+
+      @include hover{
+        background-color: var(--color-gray-100);
+      }
+    }
+  }
+}

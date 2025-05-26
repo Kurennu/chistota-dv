@@ -1,0 +1,42 @@
+.ms-slides .ms-track {
+  display: flex;
+
+}
+
+.ms-slides .ms-slide {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.ms-slides .ms-slide__card {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.ms-slide {
+  display:flex;
+  align-items: center;
+
+}
+
+.ms-slides.ms-container--horizontal{
+  width: 100%;
+  max-width: 100%;
+}
+
+.ms-slides {
+  position: relative;
+  overflow: hidden;
+  left: calc(50% - 680px + 40px);
+}
+
+.reviews__inner.container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}

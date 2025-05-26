@@ -95,10 +95,11 @@
     }
 
     &-input{
-      border: none;
-      outline: none;
       width: rem(285);
       height: rem(40);
+      display: flex;
+      align-items: center;
+
       &--long{
         width: 100% !important;
       }
@@ -106,48 +107,7 @@
 
   }
 
-  &__policy{
-    display: flex;
-    align-items: center;
-    gap: rem(12);
-    &-label{
-      font-weight: 400;
-      font-size: rem(16);
-      color: var(--color-gray-200);
-      font-family: var(--font-family-accent);
 
-      a{
-        color: var(--color-blue);
-        text-decoration: none;
-      }
-    }
-
-    &-checkbox{
-      position: relative;
-      width: rem(19);
-      height: rem(19);
-      appearance: none;
-      border: 1px solid var(--color-blue);
-      border-radius: rem(6);
-      cursor: pointer;
-      &::after {
-        content: "";
-        position: absolute;
-        display: none;
-        left: rem(6);
-        top: rem(2);
-        width: rem(5);
-        height: rem(10);
-        border: solid var(--color-blue);
-        border-width: 0 2px 2px 0;
-        transform: rotate(45deg);
-      }
-
-      &:checked::after {
-        display: block;
-      }
-    }
-  }
 
   &__price{
     font-weight: 500;
@@ -169,6 +129,4 @@
     //  z-index: -1000;
     //}
   }
-
-
 }

@@ -39,6 +39,17 @@
     }
   }
 
+  &--white{
+    @extend .button;
+    background-color: var(--color-white);
+    color: var(--color-blue);
+
+    @include hover{
+      background-color: var(--color-gray-100);
+      color: var(--color-blue);
+    }
+  }
+
   &__wrapper{
     display: flex;
     column-gap: rem(16);

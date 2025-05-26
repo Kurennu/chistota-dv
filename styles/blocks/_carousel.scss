@@ -1,40 +1,24 @@
 @use "../helpers" as *;
 
 .carousel {
-  &__wrapper{
+  &__wrapper {
+    top: rem(-63);
+    position: relative;
     width: 100%;
+    overflow: hidden;
   }
 
   &__track {
-    bottom: rem(66);
-    position: relative;
     display: flex;
-    animation: scroll-carousel 60s linear infinite;
     gap: rem(20);
-    will-change: transform;
-    transition: transform 0.5s linear;
+    width: max-content;
   }
 
   &__slide {
-    position: relative;
-    flex: 0 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: rem(63);
-
-    img{
+    img {
+      width: rem(63);
       height: rem(63);
-      object-fit: contain;
+      object-fit: cover;
     }
-  }
-}
-
-@keyframes scroll-carousel {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
   }
 }

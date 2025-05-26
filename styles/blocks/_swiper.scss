@@ -1,0 +1,35 @@
+@use "../helpers" as *;
+
+.swiper {
+  &-slide{
+    opacity: 1 !important;
+  }
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(24);
+  }
+
+  &__header{
+    font-weight: 500;
+    font-size: rem(24);
+    text-transform: uppercase;
+    color: var(--color-black);
+  }
+
+  &__features{
+    padding: rem(8) rem(16) !important;
+    color: var(--color-orange);
+
+    &-wrapper{
+      display: flex;
+      align-items: center;
+      column-gap: rem(16);
+    }
+  }
+
+  &__image{
+    border-radius: rem(20);
+  }
+}

@@ -1,0 +1,149 @@
+@use "../helpers" as *;
+
+.reviews{
+  overflow: hidden;
+  &__inner{
+    padding-block: rem(70);
+  }
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: rem(40);
+  }
+
+  &__extra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-wrapper{
+      display: flex;
+      column-gap: rem(17);
+    }
+  }
+
+  &__swiper{
+    overflow: visible;
+    margin: 0 !important;
+
+    &-slide{
+      background-color: var(--color-gray-50);
+      border-radius: rem(17);
+      padding: rem(20) rem(27);
+      width: 680px;
+      height: 308px;
+      transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+      &-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+
+
+    }
+
+    &-wrapper{
+      overflow: visible;
+      align-items: center;
+      column-gap: rem(24);
+      margin-bottom: rem(40);
+    }
+    &-inner{
+      overflow: visible;
+    }
+
+  }
+
+
+  &__user{
+    &-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-info{
+      display: flex;
+      align-items: center;
+      column-gap: rem(16);
+
+    }
+
+    &-top{
+      display: flex;
+      align-items: center;
+      column-gap: rem(8);
+    }
+
+    &-bottom{
+      display: flex;
+      align-items: center;
+      column-gap: rem(8);
+      line-height: normal;
+    }
+
+
+    &-name{
+      font-weight: 400;
+      font-size: rem(20);
+      color: var(--color-black);
+    }
+
+    &-service{
+      font-family: var(--font-family-accent);
+      font-weight: 400;
+      font-size: rem(18);
+      color: var(--color-gray-200);
+    }
+  }
+  &__score{
+    font-weight: 500;
+    font-size: rem(24);
+    text-transform: uppercase;
+    color: var(--color-black);
+  }
+
+  &__body{
+    font-family: var(--font-family-accent);
+    font-weight: 400;
+    font-size: rem(24);
+    color: var(--color-black);
+  }
+
+  &__button{
+    display: flex;
+    align-items: center;
+    column-gap: rem(16);
+    border: 1px solid var(--color-blue);
+    border-radius: rem(14);
+    padding: rem(8) rem(12);
+    width: rem(260);
+    height: rem(56);
+
+    &-title{
+      font-weight: 400;
+      font-size: rem(20);
+      color: var(--color-blue);
+      line-height: rem(14);
+    }
+  }
+  &__stars{
+    display: flex;
+  }
+
+  &__img{
+    border-radius: rem(8);
+
+    &-wrapper{
+      max-width: rem(64);
+      max-height: rem(64);
+    }
+
+  }
+
+}
+
+
+

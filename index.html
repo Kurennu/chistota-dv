@@ -8,9 +8,6 @@
     <title>Чистота ДВ</title>
     <link rel="stylesheet" href="./styles/main.css">
     <script src="./scripts/main.js" type="module" defer></script>
-    <script src="./scripts/casesSwiper.js" type="module" defer></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -81,7 +78,7 @@
                 <div class="hero__body">
                     <div class="hero__header-inner">
                         <h3 class="hero__header">
-                            С нами у вас всегда
+                            С нами у вас всегда <br>
                             <span class="hero__header-print" id="typewriter"></span>
                         </h3>
                         <p class="hero__subheader">
@@ -89,7 +86,7 @@
                         </p>
 
                         <div class="hero__review">
-                            <button class="hero__review-button">
+                            <button class="review-button">
                                 <img
                                         src="./icons/VL.png"
                                         alt="VL.ru"
@@ -104,7 +101,7 @@
                                         width="20" height="20"
                                 >
                             </button>
-                            <button class="hero__review-button">
+                            <button class="review-button">
                                 <img
                                         src="./icons/Yandex.png"
                                         alt="Яндекс"
@@ -119,7 +116,7 @@
                                         width="20" height="20"
                                 >
                             </button>
-                            <button class="hero__review-button">
+                            <button class="review-button">
                                 <img
                                         src="./icons/2gis.png"
                                         alt="2gis"
@@ -168,41 +165,42 @@
                 </div>
                 <p class="about__subheader">— клининг с безупречной репутацией.</br> С 2015 года создаем идеальную чистоту <span>для домов</span> и <span>бизнеса</span>, используя профессиональные методы и  премиальную химию.</p>
                 <button class="about__button button">Заказать уборку</button>
-                <div class="about__carousel carousel__wrapper">
+                <div class="carousel__wrapper">
                     <div class="carousel__track">
-                        <div class="carousel__slide"><img src="./images/about/sber.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/selhoz.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/gazprom.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/dolinsk.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/raif.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/rusgidro.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/sistema.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/coffeemachine.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/dns.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/rosswti.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/zilcap.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/blidex.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/bork.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/morskoitrust.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/kodolovgroup.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/dalpribor.png" alt="" loading="lazy"></div>
 
-                        <div class="carousel__slide"><img src="./images/about/sber.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/selhoz.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/gazprom.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/dolinsk.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/raif.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/rusgidro.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/sistema.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/coffeemachine.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/dns.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/rosswti.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/zilcap.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/blidex.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/bork.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/morskoitrust.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/kodolovgroup.png" alt="" loading="lazy"></div>
-                        <div class="carousel__slide"><img src="./images/about/dalpribor.png" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/sber.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/selhoz.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/gazprom.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/dolinsk.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/raif.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/rusgidro.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/sistema.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/coffeemachine.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/dns.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/rosswti.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/zilcap.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/blidex.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/bork.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/morskoitrust.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/kodolovgroup.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/dalpribor.png" width="63" height="63" alt="" loading="lazy"></div>
+
+                        <div class="carousel__slide"><img src="./images/about/sber.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/selhoz.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/gazprom.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/dolinsk.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/raif.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/rusgidro.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/sistema.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/coffeemachine.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/dns.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/rosswti.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/zilcap.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/blidex.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/bork.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/morskoitrust.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/kodolovgroup.png" width="63" height="63" alt="" loading="lazy"></div>
+                        <div class="carousel__slide"><img src="./images/about/dalpribor.png" width="63" height="63" alt="" loading="lazy"></div>
                     </div>
                 </div>
 
@@ -211,7 +209,7 @@
         <section class="service container">
             <div class="service__inner">
                 <div class="service__title">
-                    <h5 class="service__header">Наши <span>Услуги</span></h5>
+                    <h5 class="h5">Наши <span>Услуги</span></h5>
                     <p class="service__subheader">Профессиональный клининг, который говорит сам за себя. <br> услуги — это ваше время, комфорт и безупречный результат.</p>
                 </div>
                 <div class="service__cards-wrapper">
@@ -221,7 +219,7 @@
                                 <h6 class="service__card-header">Генеральная уборка</h6>
                                 <p class="service__card-subheader">Современные технологии достигли такого уровня, что укрепление и развитие внутренней структуры не даёт нам иного выбора, кроме определения новых принципов формирования материально-технической и кадровой базы! Вот вам яркий пример современных тенденций — перспективное планирование создаёт предпосылки для экспериментов.</p>
                                 <div class="service__card-features">
-                                    <div class="service__card-features-item">
+                                    <div class="card-features">
                                         <img
                                                 src="./icons/service/clock.svg"
                                                 alt=""
@@ -230,7 +228,7 @@
                                         >
                                         <span>3-10 ч</span>
                                     </div>
-                                    <div class="service__card-features-item">
+                                    <div class="card-features">
                                         <img
                                                 src="./icons/service/area.svg"
                                                 alt=""
@@ -262,7 +260,7 @@
                                 <h6 class="service__card-header">Генеральная уборка</h6>
                                 <p class="service__card-subheader">Современные технологии достигли такого уровня, что укрепление и развитие внутренней структуры не даёт нам иного выбора, кроме определения новых принципов формирования материально-технической и кадровой базы! Вот вам яркий пример современных тенденций — перспективное планирование создаёт предпосылки для экспериментов.</p>
                                 <div class="service__card-features">
-                                    <div class="service__card-features-item">
+                                    <div class="card-features">
                                         <img
                                                 src="./icons/service/clock.svg"
                                                 alt=""
@@ -271,7 +269,7 @@
                                         >
                                         <span>3-10 ч</span>
                                     </div>
-                                    <div class="service__card-features-item">
+                                    <div class="card-features">
                                         <img
                                                 src="./icons/service/area.svg"
                                                 alt=""
@@ -303,7 +301,7 @@
                                 <h6 class="service__card-header">Генеральная уборка</h6>
                                 <p class="service__card-subheader">Современные технологии достигли такого уровня, что укрепление и развитие внутренней структуры не даёт нам иного выбора, кроме определения новых принципов формирования материально-технической и кадровой базы! Вот вам яркий пример современных тенденций — перспективное планирование создаёт предпосылки для экспериментов.</p>
                                 <div class="service__card-features">
-                                    <div class="service__card-features-item">
+                                    <div class="card-features">
                                         <img
                                                 src="./icons/service/clock.svg"
                                                 alt=""
@@ -312,7 +310,7 @@
                                         >
                                         <span>3-10 ч</span>
                                     </div>
-                                    <div class="service__card-features-item">
+                                    <div class="card-features">
                                         <img
                                                 src="./icons/service/area.svg"
                                                 alt=""
@@ -344,7 +342,7 @@
                                 <h6 class="service__card-header">Генеральная уборка</h6>
                                 <p class="service__card-subheader">Современные технологии достигли такого уровня, что укрепление и развитие внутренней структуры не даёт нам иного выбора, кроме определения новых принципов формирования материально-технической и кадровой базы! Вот вам яркий пример современных тенденций — перспективное планирование создаёт предпосылки для экспериментов.</p>
                                 <div class="service__card-features">
-                                    <div class="service__card-features-item">
+                                    <div class="card-features">
                                         <img
                                                 src="./icons/service/clock.svg"
                                                 alt=""
@@ -353,7 +351,7 @@
                                         >
                                         <span>3-10 ч</span>
                                     </div>
-                                    <div class="service__card-features-item">
+                                    <div class="card-features">
                                         <img
                                                 src="./icons/service/area.svg"
                                                 alt=""
@@ -519,12 +517,12 @@
                             />
                         </div>
                         <div class="cta__cell field">
-                            <select class="cta__cell-input cta__cell-select">
-                                <option value="" disabled selected>Выбор услуги</option>
-                                <option value="service1">Генеральная уборка</option>
-                                <option value="service2">Уборка после ремонта </option>
-                                <option value="service3">Мойка окон</option>
-                            </select>
+                            <div class="cta__cell-input dropdown">
+                                <button class="dropdown__toggle cta__cell-select">
+                                    Выбор услуги
+                                </button>
+                                <ul class="dropdown__menu hidden"></ul>
+                            </div>
                         </div>
                         <div class="cta__cell">
                             <input
@@ -545,8 +543,8 @@
                             />
                         </div>
                         <div class="cta__policy">
-                            <input type="checkbox" class="cta__policy-checkbox" name="" id="policy">
-                            <label for="policy" class="cta__policy-label">
+                            <input type="checkbox" class="policy__checkbox" name="" id="policy">
+                            <label for="policy" class="policy__label">
                                 С правилами <a href="/">политики конфиденциальности</a> ознакомлен
                             </label>
                         </div>
@@ -561,21 +559,20 @@
         <section class="cases">
             <div class="cases__inner container">
                 <div class="cases__title">
-                    <h5 class="cases__header">Мы выполнили <br><span>>8 300 заказов</span></h5>
-                    <p class="cases__subheader">
+                    <h5 class="h5">Мы выполнили <br><span>>8 300 заказов</span></h5>
+                    <p class="p1">
                         Посмотрите на наши <span>реальные работы</span><br>
                         и убедитесь, что <span>мы предоставляем услуги</span><br><span>высокого качества.</span>
                     </p>
                 </div>
                 <div class="cases__action">
-                    <form class="cases__form" action="" method="">
-                        <select class="cases__select" name="filter">
-                            <option value="">Частная недвижимость</option>
-                            <option value="">Частная недвижимость</option>
-                            <option value="">Частная недвижимость</option>
-                            <option value="">Частная недвижимость</option>
-                        </select>
-                    </form>
+                    <div class="cases__dropdown dropdown-cases">
+                        <button class="dropdown__toggle">
+                            Выбор услуги
+                        </button>
+                        <ul class="dropdown__menu hidden"></ul>
+                    </div>
+
                     <div class="button__wrapper">
                         <button class="button cases__button">Связаться</button>
                         <button class="button--arrow">
@@ -586,29 +583,29 @@
                         </button>
                     </div>
                 </div>
-                <div class="cases__slider swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                <div class="cases__swiper swiper">
+                    <div class="cases__swiper-wrapper swiper-wrapper">
+                        <div class="cases__swiper-slide swiper-slide">
                             <div class="swiper__title">
                                 <h2 class="swiper__header">Уборка офиса</h2>
-                                <div class="service__card-features">
-                                    <div class="service__card-features-item">
+                                <div class="swiper__features-wrapper">
+                                    <div class="card-features swiper__features">
                                         <img
-                                                src="./icons/service/clock.svg"
+                                                src="./icons/profile.svg"
                                                 alt=""
                                                 class=""
                                                 width="16" height="16"
                                         >
-                                        <span>3-10 ч</span>
+                                        <span>ЮР.лицо</span>
                                     </div>
-                                    <div class="service__card-features-item">
+                                    <div class="swiper__features card-features">
                                         <img
                                                 src="./icons/service/area.svg"
                                                 alt=""
                                                 class=""
                                                 width="16" height="16"
                                         >
-                                        <span>до 5 000 м2</span>
+                                        <span>28 м2</span>
                                     </div>
 
                                 </div>
@@ -616,31 +613,63 @@
                             <img
                                     src="./images/cases/office.png"
                                     alt=""
-                                    class=""
+                                    class="swiper__image"
                                     width="636" height="370"
                             >
                         </div>
-                        <div class="swiper-slide">
+                        <div class="cases__swiper-slide swiper-slide">
                             <div class="swiper__title">
-                                <h2 class="swiper__header">Уборка офиса</h2>
-                                <div class="service__card-features">
-                                    <div class="service__card-features-item">
+                                <h2 class="swiper__header">Мойка фасадов</h2>
+                                <div class="swiper__features-wrapper">
+                                    <div class="card-features swiper__features">
                                         <img
-                                                src="./icons/service/clock.svg"
+                                                src="./icons/profile.svg"
                                                 alt=""
                                                 class=""
                                                 width="16" height="16"
                                         >
-                                        <span>3-10 ч</span>
+                                        <span>ЮР.лицо</span>
                                     </div>
-                                    <div class="service__card-features-item">
+                                    <div class="swiper__features card-features">
                                         <img
                                                 src="./icons/service/area.svg"
                                                 alt=""
                                                 class=""
                                                 width="16" height="16"
                                         >
-                                        <span>до 5 000 м2</span>
+                                        <span>96 м2</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <img
+                                    src="./images/cases/rusgidro.png"
+                                    alt=""
+                                    class="swiper__image"
+                                    width="636" height="370"
+                            >
+                        </div>
+                        <div class="cases__swiper-slide swiper-slide">
+                            <div class="swiper__title">
+                                <h2 class="swiper__header">Уборка офиса</h2>
+                                <div class="swiper__features-wrapper">
+                                    <div class="card-features swiper__features">
+                                        <img
+                                                src="./icons/profile.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>ЮР.лицо</span>
+                                    </div>
+                                    <div class="swiper__features card-features">
+                                        <img
+                                                src="./icons/service/area.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>28 м2</span>
                                     </div>
 
                                 </div>
@@ -648,31 +677,31 @@
                             <img
                                     src="./images/cases/office.png"
                                     alt=""
-                                    class=""
+                                    class="swiper__image"
                                     width="636" height="370"
                             >
                         </div>
-                        <div class="swiper-slide">
+                        <div class="cases__swiper-slide swiper-slide">
                             <div class="swiper__title">
                                 <h2 class="swiper__header">Уборка офиса</h2>
-                                <div class="service__card-features">
-                                    <div class="service__card-features-item">
+                                <div class="swiper__features-wrapper">
+                                    <div class="card-features swiper__features">
                                         <img
-                                                src="./icons/service/clock.svg"
+                                                src="./icons/profile.svg"
                                                 alt=""
                                                 class=""
                                                 width="16" height="16"
                                         >
-                                        <span>3-10 ч</span>
+                                        <span>ЮР.лицо</span>
                                     </div>
-                                    <div class="service__card-features-item">
+                                    <div class="swiper__features card-features">
                                         <img
                                                 src="./icons/service/area.svg"
                                                 alt=""
                                                 class=""
                                                 width="16" height="16"
                                         >
-                                        <span>до 5 000 м2</span>
+                                        <span>28 м2</span>
                                     </div>
 
                                 </div>
@@ -680,47 +709,286 @@
                             <img
                                     src="./images/cases/office.png"
                                     alt=""
-                                    class=""
+                                    class="swiper__image"
                                     width="636" height="370"
                             >
                         </div>
-                        <div class="swiper-slide">
-                            <div class="swiper__title">
-                                <h2 class="swiper__header">Уборка офиса</h2>
-                                <div class="service__card-features">
-                                    <div class="service__card-features-item">
-                                        <img
-                                                src="./icons/service/clock.svg"
-                                                alt=""
-                                                class=""
-                                                width="16" height="16"
-                                        >
-                                        <span>3-10 ч</span>
-                                    </div>
-                                    <div class="service__card-features-item">
-                                        <img
-                                                src="./icons/service/area.svg"
-                                                alt=""
-                                                class=""
-                                                width="16" height="16"
-                                        >
-                                        <span>до 5 000 м2</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <img
-                                    src="./images/cases/office.png"
-                                    alt=""
-                                    class=""
-                                    width="636" height="370"
-                            >
-                        </div>
-
                     </div>
                 </div>
             </div>
         </section>
+        <section class="reviews">
+            <div class="reviews__inner">
+                <div class="reviews__title container">
+                    <h5 class="h5 reviews__header">наши <span>отзывы</span></h5>
+                    <p class="p1">Посмотрите на наши <span>реальные работы</span><br>
+                        и убедитесь, что <span>мы предоставляем услуги высокого качества.</span></p>
+                </div>
+                <div class="ms-slide__container"></div>
+
+                <div class="slider-controls container">
+                    <button class="prev-button">
+                        <img src="" alt="Предыдущий слайд">
+                    </button>
+
+                    <span class="current-slide">1/3</span>
+
+                    <button class="next-button">
+                        <img src="" alt="Следующий слайд">
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        <section class="cta-request">
+            <div class="cta-request__wrapper">
+                <div class="cta-request__inner container">
+                    <h2 class="cta-request__header">
+                        Ваше время <br> дороже
+                        <span id="typewriterCta"></span>
+                    </h2>
+                    <div class="cta-request__action">
+                        <button class="cta-request__button button--white">
+                            Оставить заявку
+                        </button>
+                        <div class="cta-request__contacts">
+                            <div class="cta-request__contacts-item">
+                                <img
+                                        src="./icons/instagram.svg"
+                                        alt=""
+                                        class=""
+                                        width="28" height="28"
+                                >
+                            </div>
+                            <div class="cta-request__contacts-item">
+                                <img
+                                        src="./icons/telegram.svg"
+                                        alt=""
+                                        class=""
+                                        width="28" height="23"
+                                >
+                            </div>
+                            <div class="cta-request__contacts-item">
+                                <img
+                                        src="./icons/VK.svg"
+                                        alt=""
+                                        class=""
+                                        width="33" height="20"
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="faq__inner container">
+                <div class="faq__body">
+                    <div class="faq__title">
+                        <h5 class="h5">Будем <span>на связи!</span></h5>
+                        <p class="faq__subheader p1">
+                            Также как выбранный нами инновационный путь не даёт нам иного выбора, кроме определения инновационных методов управления процессами.
+                        </p>
+                    </div>
+                    <div class="faq__socials-wrapper">
+                        <a href="" class="faq__socials-logo">
+                            <img
+                                    src="./icons/instagram.svg"
+                                    alt="Instagram"
+                                    class="faq__logo"
+                                    width="50" height="50"
+                            >
+                        </a>
+                        <a href="" class="faq__socials-logo">
+                            <img
+                                    src="./icons/telegram.svg"
+                                    alt="Telegram"
+                                    class="faq__logo"
+                                    width="50" height="50"
+                            >
+                        </a>
+                        <a href="" class="faq__socials-logo">
+                            <img
+                                    src="./icons/VK.svg"
+                                    alt="Вконтакте"
+                                    class="faq__logo"
+                                    width="50" height="50"
+                            >
+                        </a>
+                    </div>
+                    <div class="faq__form-wrapper">
+                        <form action="" class="faq__form">
+                            <div class="faq__fields">
+                                <div class="faq__cell">
+                                    <input
+                                            class="faq__cell-input"
+                                            placeholder="Татьяна"
+                                    />
+                                </div>
+                                <div class="faq__cell">
+                                    <input
+                                            class="faq__cell-input"
+                                            placeholder="6 900 м2"
+                                    />
+                                </div>
+                                <div class="faq__cell">
+                                    <div class="faq__cell-input dropdown-faq">
+                                        <button class="faq__toggle dropdown__toggle">
+                                        </button>
+                                        <ul class="dropdown__menu hidden"></ul>
+                                    </div>
+
+                                </div>
+                                <div class="faq__cell">
+                                    <input
+                                            class="faq__cell-input"
+                                            placeholder="Номер телефона"
+                                    />
+                                </div>
+                                <div class="faq__cell">
+                                    <input
+                                            class="faq__cell-input"
+                                            placeholder="Уточните свой вопрос"
+                                    />
+                                </div>
+                                <div class="policy">
+                                    <input type="checkbox" class="policy__checkbox" name="">
+                                    <label for="policy" class="policy__label">
+                                        С правилами <a href="/">политики конфиденциальности</a> ознакомлен
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="faq__action">
+                                <button type="submit" class="button faq__button"><span>Оставить заявку</span></button>
+                                <p class="faq__price">Итого: 2 500₽</p>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="faq__questions">
+                    <details class="faq__item">
+                        <summary class="faq__legend">
+                            Как быстро можно вызвать клинера?
+                        </summary>
+                        <p class="faq__content">В течение 2 часов — для срочных заказов.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__legend">
+                            Есть ли скидки?
+                        </summary>
+                        <p class="faq__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aut cupiditate deleniti excepturi harum, illum, impedit libero magnam modi mollitia numquam perferendis qui quos repellendus rerum saepe, suscipit voluptatibus?</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__legend">
+                            Если мне не понравится результат?
+                        </summary>
+                        <p class="faq__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aut cupiditate deleniti excepturi harum, illum, impedit libero magnam modi mollitia numquam perferendis qui quos repellendus rerum saepe, suscipit voluptatibus?</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__legend">
+                            Можно ли убраться ночью?
+                        </summary>
+                        <p class="faq__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aut cupiditate deleniti excepturi harum, illum, impedit libero magnam modi mollitia numquam perferendis qui quos repellendus rerum saepe, suscipit voluptatibus?</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__legend">
+                            Есть ли скидки?
+                        </summary>
+                        <p class="faq__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aut cupiditate deleniti excepturi harum, illum, impedit libero magnam modi mollitia numquam perferendis qui quos repellendus rerum saepe, suscipit voluptatibus?</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__legend">
+                            Какие средства вы используете?
+                        </summary>
+                        <p class="faq__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aut cupiditate deleniti excepturi harum, illum, impedit libero magnam modi mollitia numquam perferendis qui quos repellendus rerum saepe, suscipit voluptatibus?</p>
+                    </details>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__body">
+                <div class="footer__info">
+                    <p class="p1 footer__title">Ясность нашей позиции очевидна: высокое качество позиционных исследований играет определяющее значение для системы массового участия</p>
+                    <div class="footer__socials-wrapper">
+                        <a href="" class="footer__socials-logo">
+                            <img
+                                    src="./icons/instagram.svg"
+                                    alt="Instagram"
+                                    class="footer__logo"
+                                    width="40" height="40"
+                            >
+                        </a>
+                        <a href="" class="footer__socials-logo">
+                            <img
+                                    src="./icons/telegram.svg"
+                                    alt="Telegram"
+                                    class="footer__logo"
+                                    width="40" height="40"
+                            >
+                        </a>
+                        <a href="" class="footer__socials-logo">
+                            <img
+                                    src="./icons/VK.svg"
+                                    alt="Вконтакте"
+                                    class="footer__logo"
+                                    width="40" height="40"
+                            >
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__nav">
+                    <div class="footer__list-wrapper">
+                        <p class="p2 footer__list-title">
+                            О компании
+                        </p>
+                        <ul class="footer__list">
+                            <li class="p3 footer__list-item"><a>О компании</a></li>
+                            <li class="p3 footer__list-item"><a>Услуги</a></li>
+                            <li class="p3 footer__list-item"><a>Цены</a></li>
+                            <li class="p3 footer__list-item"><a>Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__list-wrapper">
+                        <p class="p2 footer__list-title">
+                            Контакты
+                        </p>
+                        <ul class="footer__list">
+                            <li class="p3 footer__list-item">
+                                <img
+                                        src="./images/footer/phone.svg"
+                                        alt=""
+                                        class="footer__logo"
+                                        width="14" height="14"
+                                >
+                                <a href="tel:89121244221">+7 912 124 42 21</a>
+                            </li>
+                            <li class="p3 footer__list-item">
+                                <img
+                                        src="./images/footer/map-pin.svg"
+                                        alt=""
+                                        class="footer__logo"
+                                        width="14" height="14"
+                                >
+                                Владивосток
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__extra">
+                <div class="footer__extra-info">
+                    <a href="" class="footer__extra-policy">Политика конфиденциальности</a>
+                    <p class="footer__extra-copyright">© 2025 ЧИСТОТА ДВ. Все права защищены</p>
+                </div>
+                <p class="footer__extra-title">Чистота ДВ</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
