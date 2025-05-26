@@ -26,7 +26,7 @@ const reviewsData = [
         }
     },
     {
-        name: "Мария",
+        name: "Евгений",
         service: "Послеремонтная уборка",
         text: "Заказывали уборку после переезда — квартира засияла! Спасибо за бережное отношение к моей техник.",
         photo: "./images/reviews/user3.png",
@@ -36,7 +36,7 @@ const reviewsData = [
             text: "Читать на 2GIS",
             icon: "./icons/2gis.png"
         }
-    },
+    }
 ];
 
 function createReviewSlide(review) {
@@ -82,14 +82,9 @@ function createReviewSlide(review) {
 
 export function initReviewsSlider() {
     const slidersContainer = document.querySelector('.ms-slide__container');
-    const prevButton = document.querySelector('.prev-button');
-    const nextButton = document.querySelector('.next-button');
-    const currentSlideIndicator = document.querySelector('.current-slide');
-
-    if (!slidersContainer || !prevButton || !nextButton || !currentSlideIndicator) {
-        console.warn('Не найдены необходимые элементы для слайдера отзывов');
-        return;
-    }
+    const prevButton = document.querySelector('.ms-slide__controls-prev');
+    const nextButton = document.querySelector('.ms-slide__controls-next');
+    const currentSlideIndicator = document.querySelector('.ms-slide__controls-current');
 
     const msImages = new MomentumSlider({
         el: slidersContainer,
@@ -97,9 +92,12 @@ export function initReviewsSlider() {
         range: [0, reviewsData.length - 1],
         rangeContent: (index) => createReviewSlide(reviewsData[index]),
         change: (newIndex) => {
-            currentSlideIndicator.textContent = `${newIndex + 1}/${reviewsData.length}`;
+            const formatNumber = (num) => num.toString().padStart(2, '0');
+            currentSlideIndicator.innerHTML = `${formatNumber(newIndex + 1)}/<span>${formatNumber(reviewsData.length)}</span>`;
             prevButton.disabled = newIndex === 0;
             nextButton.disabled = newIndex === reviewsData.length - 1;
+            prevButton.classList.toggle('is-disabled', newIndex === 0);
+            nextButton.classList.toggle('is-disabled', newIndex === reviewsData.length - 1);
         },
         style: {
             '.reviews__swiper-slide': {
@@ -123,8 +121,8 @@ export function initReviewsSlider() {
         }
     });
 
-    // Инициализация состояния
-    currentSlideIndicator.textContent = `1/${reviewsData.length}`;
+    const formatNumber = (num) => num.toString().padStart(2, '0');
+    currentSlideIndicator.innerHTML = `${formatNumber(1)}/<span>${formatNumber(reviewsData.length)}</span>`;
     prevButton.disabled = true;
     if (reviewsData.length <= 1) {
         nextButton.disabled = true;

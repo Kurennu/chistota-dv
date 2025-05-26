@@ -2,9 +2,11 @@
 
 .reviews{
   overflow: hidden;
+
   &__inner{
     padding-block: rem(70);
   }
+
   &__title{
     display: flex;
     justify-content: space-between;
@@ -16,6 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     &-wrapper{
       display: flex;
       column-gap: rem(17);
@@ -40,8 +43,6 @@
         justify-content: space-between;
         height: 100%;
       }
-
-
     }
 
     &-wrapper{
@@ -50,14 +51,15 @@
       column-gap: rem(24);
       margin-bottom: rem(40);
     }
+
     &-inner{
       overflow: visible;
     }
-
   }
 
 
   &__user{
+
     &-wrapper{
       display: flex;
       justify-content: space-between;
@@ -122,6 +124,11 @@
     width: rem(260);
     height: rem(56);
 
+    @include hover{
+      background-color: var(--color-white);
+      transition-duration: var(--transition-duration);
+    }
+
     &-title{
       font-weight: 400;
       font-size: rem(20);
@@ -140,7 +147,11 @@
       max-width: rem(64);
       max-height: rem(64);
     }
+  }
 
+  &__links{
+    display: flex;
+    gap: rem(8);
   }
 
 }

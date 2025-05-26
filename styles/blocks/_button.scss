@@ -17,6 +17,7 @@
   text-align: center;
 
   @include hover{
+    transition-duration: var(--transition-duration);
     background-color: var(--color-white);
     color: var(--color-blue);
   }
@@ -33,6 +34,8 @@
 
     @include hover{
       background-color: var(--color-white);
+      transition-duration: var(--transition-duration);
+
       svg path {
         stroke: var(--color-blue);
       }
@@ -45,6 +48,7 @@
     color: var(--color-blue);
 
     @include hover{
+      transition-duration: var(--transition-duration);
       background-color: var(--color-gray-100);
       color: var(--color-blue);
     }
