@@ -7,6 +7,8 @@ import { initCasesSlider } from './casesSwiper.js';
 import { initBrandsCarousel } from './brandsCarousel.js';
 import { initDropdown } from './dropdown.js'
 import { initReviewsSlider } from './reviewsSlider.js';
+import { initServiceCarouselR } from './serviceCarouselRight.js';
+import { initServiceCarouselL } from './serviceCarouselLeft.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     initTypewriterHero();
@@ -15,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initCasesSlider();
     initBrandsCarousel();
     initReviewsSlider();
+    initServiceCarouselR();
+    initServiceCarouselL();
 
     initDropdown({
         containerSelector: '.dropdown',

@@ -1,15 +1,13 @@
 import { gsap } from "gsap";
 
-export function initBrandsCarousel() {
-    const track = document.querySelector('.carousel__track');
-    if (!track) return;
+export function initServiceCarouselR() {
+    const track = document.querySelector('.other-carousel__track--top');
+    let slides = Array.from(track.querySelectorAll('.other-carousel__slide'));
 
-    let logos = Array.from(track.querySelectorAll('.carousel__slide'));
-
-    logos.forEach(logo => track.appendChild(logo.cloneNode(true)));
+    slides.forEach(slide => track.appendChild(slide.cloneNode(true)));
 
     while (track.scrollWidth < window.innerWidth * 2) {
-        logos.forEach(logo => track.appendChild(logo.cloneNode(true)));
+        slides.forEach(slide => track.appendChild(slide.cloneNode(true)));
     }
 
     gsap.to(track, {

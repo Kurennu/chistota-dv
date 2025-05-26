@@ -1,7 +1,7 @@
 @use "../helpers" as *;
 
 .header{
-  padding-block: rem(32);
+  padding-block: rem(20);
   font-family: var(--font-family-accent);
   position: sticky;
   z-index: 200;
