@@ -42,37 +42,50 @@
                         <a href="tel:89121244221" class="header__contacts-link">
                             +7 (912) 124 42-21
                         </a>
-                        <a href="" class="header__contacts-logo">
-                            <img
-                                    src="./icons/instagram.svg"
-                                    alt="Instagram"
-                                    class="header__logo"
-                                    width="32" height="32"
-                            >
-                        </a>
-                        <a href="" class="header__contacts-logo">
-                            <img
-                                    src="./icons/telegram.svg"
-                                    alt="Telegram"
-                                    class="header__logo"
-                                    width="32" height="32"
-                            >
-                        </a>
-                        <a href="" class="header__contacts-logo">
-                            <img
-                                    src="./icons/VK.svg"
-                                    alt="Вконтакте"
-                                    class="header__logo"
-                                    width="32" height="32"
-                            >
-                        </a>
+                        <div class="header__contacts-wrapper">
+                            <a href="" class="header__contacts-logo">
+                                <img
+                                        src="./icons/instagram.svg"
+                                        alt="Instagram"
+                                        class="header__logo"
+                                        width="32" height="32"
+                                >
+                            </a>
+                            <a href="" class="header__contacts-logo">
+                                <img
+                                        src="./icons/telegram.svg"
+                                        alt="Telegram"
+                                        class="header__logo"
+                                        width="32" height="32"
+                                >
+                            </a>
+                            <a href="" class="header__contacts-logo">
+                                <img
+                                        src="./icons/VK.svg"
+                                        alt="Вконтакте"
+                                        class="header__logo"
+                                        width="32" height="32"
+                                >
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <button
+                        class="header__burger-button burger-button visible-mobile"
+                        type="button"
+                        aria-label="Меню"
+                        title="Меню"
+                        data-js-header-burger-button
+                >
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </button>
             </div>
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero hidden-mobile">
             <div class="hero__main">
                 <div class="hero__body">
                     <div class="hero__header-inner">
