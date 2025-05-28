@@ -37,6 +37,12 @@ h5 {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--color-black);
+
+  @include tablet{
+    font-size: rem(36);
+    line-height: normal;
+    letter-spacing: normal;
+  }
   .orange {
     color: var(--color-orange);
   }

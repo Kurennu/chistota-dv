@@ -1,9 +1,25 @@
 @use "../helpers" as *;
 
 .service{
+  @include tablet{
+    padding-inline: 80px;
+  }
+
+  @include mobile{
+    display: contents;
+  }
 
   &__title{
     text-align: center;
+  }
+
+  &__header{
+    line-height: rem(35);
+    margin-bottom: rem(32);
+
+    @include tablet{
+      margin-bottom: rem(24);
+    }
   }
 
   &__subheader{
@@ -11,15 +27,26 @@
     font-weight: 400;
     font-size: rem(24);
     margin-bottom: rem(47);
+
+    @include tablet{
+      margin-bottom: rem(32);
+      font-size: rem(20);
+    }
   }
 
   &__inner{
     padding-top: rem(70);
     padding-bottom: rem(100);
+
+    @include tablet{
+      padding-top: rem(60);
+      padding-bottom: rem(90);
+    }
   }
+
   &__cards-wrapper {
     position: relative;
-    --card-height: 527px;
+    --card-height: auto;
     --base-gap: 100px;
     --overlap-offset: -7px;
     --cards-count: 4;
@@ -70,14 +97,32 @@
     &:nth-child(3){ box-shadow: 0 -9px 0 -1px var(--color-blue-200);}
     &:nth-child(4){ box-shadow: 0 -9px 0 -1px var(--color-blue-300);}
 
+
+    @include mobile{
+      padding: rem(20);
+    }
+
+
     &-body{
       display: flex;
       justify-content: space-between;
+      width: 100%;
+
+      @include laptop{
+        align-items: center;
+      }
+
+      @include tablet{
+        flex-direction: column;
+      }
     }
     &-main{
-      width: 46%;
-    }
+      width: 48%;
 
+      @include tablet{
+        width: 100%;
+      }
+    }
 
     &-header{
       font-weight: 500;
@@ -85,6 +130,10 @@
       margin-bottom: rem(32);
       color: var(--color-black);
       line-height: normal;
+
+      @include tablet{
+        margin-bottom: rem(24);
+      }
     }
 
     &-subheader{
@@ -93,16 +142,53 @@
       margin-bottom: rem(40);
       font-family: var(--font-family-accent);
       line-height: normal;
+
+      @include laptop {
+        font-size: rem(20);
+        margin-bottom: rem(24);
+      }
     }
 
     &-features{
       display: flex;
       column-gap: rem(15);
-      margin-bottom: rem(50);
+      margin-bottom: rem(54);
+
+      @include tablet{
+        margin-bottom: rem(32);
+      }
+    }
+
+    &-photo{
+      display: flex;
+      justify-content: flex-end;
+
+      @include tablet{
+        justify-content: center;
+      }
+
+      &-wrapper{
+        width: 50%;
+
+        @include tablet{
+          width: 100%;
+        }
+      }
     }
 
     &-img{
+      width: 100%;
+      height: auto;
+      object-fit: contain;
       border-radius: rem(20);
+
+      @include laptop {
+        width: 95%;
+      }
+
+      @include tablet{
+        width: 100%;
+      }
     }
   }
 
@@ -110,19 +196,40 @@
     display: flex;
     column-gap: rem(23);
     align-items: center;
+
+    @include tablet{
+      margin-bottom: rem(32);
+      justify-content: center;
+    }
+
+    @include mobile{
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: rem(32);
+    }
   }
 
   &__price{
     font-weight: 500;
-    font-size: rem(23);
+    line-height: rem(17);
+    font-size: rem(24);
     color: var(--color-black);
     text-transform: uppercase;
+    text-wrap: nowrap;
   }
 
   &__button{
     padding-inline: rem(80) !important;
     height: rem(55);
     width: rem(425);
+
+    @include mobile{
+      width: rem(350);
+    }
+
+    @include tablet{
+      width: 100%;
+    }
   }
 }
 
