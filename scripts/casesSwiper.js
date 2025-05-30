@@ -1,5 +1,5 @@
 import { Splide } from '@splidejs/splide';
-import '@splidejs/splide/css'; // Базовые стили
+import '@splidejs/splide/css';
 
 export function initCasesSlider() {
     const splide = new Splide('.cases__splide', {
