@@ -27,11 +27,9 @@
   },
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
-    "choices.js": "^11.1.0",
     "gsap": "^3.13.0",
     "momentum-slider": "^0.0.8",
     "splitting": "^1.1.0",
-    "swiper": "^11.2.6",
     "typewriter-effect": "^2.22.0"
   }
 }

@@ -73,7 +73,7 @@ function createReviewSlide(review) {
                 </div>
               </div>
             </div>
-            <div class="reviews__user-commas">
+            <div class="reviews__user-commas hidden-mobile">
               <img src="${commasIcon}" alt="" class="reviews__commas" width="48" height="48">
             </div>
           </div>
@@ -95,7 +95,9 @@ export function initReviewsSlider() {
     const nextButton = document.querySelector('.ms-slide__controls-next');
     const currentSlideIndicator = document.querySelector('.ms-slide__controls-current');
 
-    const msImages = new MomentumSlider({
+    const mobileMediaQuery = window.matchMedia('(max-width: 768px)');
+
+    const getSliderConfig = (isMobile) => ({
         el: slidersContainer,
         cssClass: 'ms-slides',
         range: [0, reviewsData.length - 1],
@@ -110,11 +112,21 @@ export function initReviewsSlider() {
         },
         style: {
             '.reviews__swiper-slide': {
-                transform: [{ scale: [0.85, 1]}],
+                transform: [{ scale: isMobile ? [0.95, 1] : [0.85, 1] }],
                 opacity: [0.5, 1]
             },
         },
     });
+
+    let msImages = new MomentumSlider(getSliderConfig(mobileMediaQuery.matches));
+
+    const handleMediaChange = (e) => {
+        msImages.destroy();
+        msImages = new MomentumSlider(getSliderConfig(e.matches));
+    };
+
+
+    mobileMediaQuery.addEventListener('change', handleMediaChange);
 
     prevButton.addEventListener('click', () => {
         const currentIndex = msImages.getCurrentIndex();

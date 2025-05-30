@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Чистота ДВ</title>
     <script src="./scripts/main.js" type="module" defer></script>
-    <script src="./scripts/serviceCardText.js" type="module" defer></script>
-
 </head>
 <body>
     <header class="header">
@@ -764,11 +762,10 @@
             <div class="reviews__inner">
                 <div class="reviews__title container">
                     <h5 class="h5 reviews__header splitting-text" data-splitting> наши <span class="orange">отзывы</span></h5>
-                    <p class="p1">Посмотрите на наши <span>реальные работы</span><br>
+                    <p class="reviews__subheader p1">Посмотрите на наши <span>реальные работы</span><br class="hidden-mobile">
                         и убедитесь, что <span>мы предоставляем услуги высокого качества.</span></p>
                 </div>
                 <div class="ms-slide__container"></div>
-
                 <div class="reviews__extra container">
                     <div class="reviews__links">
                         <button class="review-button">
@@ -782,7 +779,7 @@
                             <img
                                     src="./icons/star.svg"
                                     alt=""
-                                    class=""
+                                    class="hidden-mobile"
                                     width="20" height="20"
                             >
                         </button>
@@ -797,7 +794,7 @@
                             <img
                                     src="./icons/star.svg"
                                     alt=""
-                                    class=""
+                                    class="hidden-mobile"
                                     width="20" height="20"
                             >
                         </button>
@@ -812,12 +809,12 @@
                             <img
                                     src="./icons/star.svg"
                                     alt=""
-                                    class=""
+                                    class="hidden-mobile"
                                     width="20" height="20"
                             >
                         </button>
                     </div>
-                    <div class="ms-slide__controls">
+                    <div class="ms-slide__controls hidden-mobile">
                         <button class="ms-slide__controls-button ms-slide__controls-prev">
                             <img
                                     src="./icons/arrow-left.svg"
@@ -846,7 +843,7 @@
             <div class="cta-request__wrapper">
                 <div class="cta-request__inner container">
                     <h2 class="cta-request__header splitting-text" data-splitting>
-                        Ваше время <br> дороже
+                        Ваше время <br class="hidden-mobile"> дороже <br class="visible-mobile">
                         <span id="typewriterCta"></span>
                     </h2>
                     <div class="cta-request__action">

@@ -10,6 +10,8 @@
   background-color: var(--color-white);
   font-size: rem(20);
   font-weight: 500;
+  line-height: rem(14);
+
 
   @include hover{
     background-color: var(--color-gray-50);

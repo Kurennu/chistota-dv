@@ -9,12 +9,17 @@
     position: relative;
     overflow: hidden;
     left: calc(50% - 680px + 40px);
+
+    @include container{
+      left: 20px;
+    }
   }
 
   &-slide{
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
 
     &__card{
       width: 100%;
@@ -59,11 +64,19 @@
         }
       }
     }
+
+    &__container{
+      margin-bottom: rem(30);
+
+      @include mobile{
+        margin-bottom: 0;
+        order: 3;
+      }
+
+    }
   }
 
   &-container{
-    margin-bottom: rem(30);
-
     &--horizontal{
       width: 100%;
       max-width: 100%;
