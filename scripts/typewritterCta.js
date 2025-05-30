@@ -3,19 +3,21 @@ import Typewriter from 'typewriter-effect/dist/core';
 export function initTypewriterCta() {
     const words = ['уборки', 'хлопот'];
 
-    if (!document.getElementById('typewriterCta')) return;
+    const el = document.getElementById('typewriterCta');
+    if (!el) return;
 
-    new Typewriter('#typewriterCta', {
+    const typewriter = new Typewriter(el, {
         loop: true,
-        delay: 100,
+        delay: 200,
         deleteSpeed: 50,
-    })
+    });
 
-        .typeString(words[0])
-        .pauseFor(1500)
-        .deleteAll()
-        .typeString(words[1])
-        .pauseFor(1500)
-        .deleteAll()
-        .start();
+    words.forEach(word => {
+        typewriter
+            .typeString(word)
+            .pauseFor(1500)
+            .deleteAll();
+    });
+
+    typewriter.start();
 }

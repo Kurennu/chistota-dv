@@ -3,25 +3,20 @@ import Typewriter from 'typewriter-effect/dist/core';
 export function initTypewriterHero() {
     const words = ['чисто', 'уютно', 'порядок', 'свежо'];
 
-    if (!document.getElementById('typewriter')) return;
+    const el = document.getElementById('typewriter');
+    if (!el) return;
 
-    new Typewriter('#typewriter', {
+    const typewriter = new Typewriter(el, {
         loop: true,
         delay: 200,
         deleteSpeed: 50,
-    })
+    });
 
-        .typeString(words[0])
-        .pauseFor(1500)
-        .deleteAll()
-        .typeString(words[1])
-        .pauseFor(1500)
-        .deleteAll()
-        .typeString(words[2])
-        .pauseFor(1500)
-        .deleteAll()
-        .typeString(words[3])
-        .pauseFor(1500)
-        .deleteAll()
-        .start();
+    words.forEach(word => {
+        typewriter
+            .typeString(word)
+            .pauseFor(1500)
+            .deleteAll();
+    });
+    typewriter.start();
 }

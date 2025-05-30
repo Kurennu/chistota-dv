@@ -2,7 +2,6 @@ import '../styles/main.scss';
 
 import { initTypewriterHero } from './typewriterHero.js';
 import { initTypewriterCta } from './typewritterCta.js';
-import initServiceCards from './serviceCards.js';
 import { initCasesSlider } from './casesSwiper.js';
 import { initBrandsCarousel } from './brandsCarousel.js';
 import { initDropdown } from './dropdown.js'
@@ -16,7 +15,6 @@ import { initExpandableText } from "./serviceCardText";
 document.addEventListener('DOMContentLoaded', () => {
     initTypewriterHero();
     initTypewriterCta();
-    initServiceCards();
     initCasesSlider();
     initBrandsCarousel();
     initReviewsSlider();
