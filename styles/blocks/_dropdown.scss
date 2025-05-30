@@ -5,8 +5,17 @@
   &-cases{
     position: relative;
   }
+
   &-faq{
     position: relative;
+  }
+
+  &__label {
+    font-size: rem(18);
+
+    @include mobile{
+      font-size: rem(16);
+    }
   }
 
   &__toggle{
@@ -26,6 +35,11 @@
     &.dropdown__label {
       flex-grow: 1;
       text-align: left;
+      font-size: rem(18);
+
+      @include mobile{
+      font-size: rem(16);
+      }
     }
 
     &.is-open .dropdown__icon {

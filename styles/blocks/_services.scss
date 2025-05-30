@@ -41,6 +41,7 @@
     @include tablet{
       padding-top: rem(60);
       padding-bottom: rem(90);
+      padding-inline: 1px;
     }
   }
 
@@ -57,6 +58,10 @@
     width: 100%;
     height: calc(var(--card-height) * var(--cards-count) + var(--total-gap));
     z-index: 100;
+
+    @include tablet{
+      padding-inline: 1px;
+    }
   }
 
   &__card {
@@ -116,6 +121,7 @@
         flex-direction: column;
       }
     }
+
     &-main{
       width: 48%;
 
@@ -146,6 +152,21 @@
       @include laptop {
         font-size: rem(20);
         margin-bottom: rem(24);
+      }
+
+      @include tablet{
+
+        &.collapsed {
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          cursor: pointer;
+        }
+
+        &.expanded {
+          cursor: pointer;
+        }
       }
     }
 

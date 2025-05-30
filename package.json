@@ -26,6 +26,7 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "choices.js": "^11.1.0",
     "gsap": "^3.13.0",
     "momentum-slider": "^0.0.8",

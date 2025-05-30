@@ -2,25 +2,56 @@
 
 .cases{
   &__inner{
-    padding-block: rem(70);
+    padding-top: rem(70);
+    padding-bottom: rem(62);
     display: flex;
     flex-direction: column;
     row-gap: rem(40);
-  }
-  &__button{
-    height: rem(55);
+
+    @include tablet{
+      padding-block: rem(60);
+      row-gap: rem(32);
+    }
   }
 
   &__title{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
+
+    @include mobile{
+      order: 1;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: rem(24);
+    }
+  }
+
+  &__subtitle{
+    max-width: 33%;
+
+    @include tablet{
+      max-width: 45%;
+      font-size: rem(20);
+    }
+
+    @include mobile{
+      max-width: 100%;
+    }
   }
 
   &__action{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mobile{
+      display: contents;
+      flex-direction: column;
+      order: 2;
+    }
   }
 
   &__dropdown{
@@ -44,26 +75,49 @@
     &:focus-visible {
       outline: 1px solid var(--color-blue);
     }
+
+    @include mobile{
+      order: 1;
+      width: 100%;
+
+      .dropdown__toggle{
+        justify-content: center;
+      }
+    }
+
+    @include tablet{
+      padding-bottom: -8px;
+    }
   }
 
-
-  &__swiper {
-    flex-shrink: 0;
-    width: 1312px;
-    overflow: hidden;
-    position: relative;
+  &__splide {
+    @include mobile{
+      order: 2;
+    }
 
     &-slide{
       display: flex;
       flex-direction: column;
-      width: 636px !important;
-      height: 426px !important;
-      flex-shrink: 0;
-    }
 
+      @include mobile{
+        &:not(.is-active){
+          opacity: 0.5 !important;
+        }
+      }
+    }
+  }
+
+  &__button{
+    height: rem(55);
+
+    @include mobile{
+      width: 100%;
+    }
     &-wrapper{
-      display: flex;
-      column-gap: rem(28);
+
+      @include mobile{
+        order: 3;
+      }
     }
   }
 }

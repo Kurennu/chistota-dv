@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Чистота ДВ</title>
     <script src="./scripts/main.js" type="module" defer></script>
+    <script src="./scripts/serviceCardText.js" type="module" defer></script>
+
 </head>
 <body>
     <header class="header">
@@ -512,11 +514,11 @@
             <div class="cta__inner container">
                 <div class="cta__main">
                     <div class="cta__title">
-                        <h5 class="cta__header splitting-text" data-splitting>Закажите уборку <br> сегодня — получите <br> скидку 15%!</h5>
-                        <div class="cta__subheader">Оставьте заявку до конца недели, и наш специалист <br> приедет в удобное время.</div>
+                        <h5 class="cta__header splitting-text" data-splitting>Закажите уборку сегодня — получите скидку 15%!</h5>
+                        <div class="cta__subheader">Оставьте заявку до конца недели, и наш специалист приедет в удобное время.</div>
                     </div>
                     <div class="cta__socials">
-                        <p class="cta__socials-title">Подписывайся на нас в социальных сетях! <br> Будь вкурсе всех событий</p>
+                        <p class="cta__socials-title">Подписывайся на нас в социальных сетях! Будь вкурсе всех событий</p>
                         <div class="cta__socials-wrapper">
                             <a href="" class="cta__socials-logo">
                                 <img
@@ -598,10 +600,10 @@
         <section class="cases">
             <div class="cases__inner container">
                 <div class="cases__title">
-                    <h5 class="h5 splitting-text" data-splitting>Мы выполнили <br><span class="orange">>8 300 заказов</span></h5>
-                    <p class="p1">
-                        Посмотрите на наши <span>реальные работы</span><br>
-                        и убедитесь, что <span>мы предоставляем услуги</span><br><span>высокого качества.</span>
+                    <h5 class="h5 splitting-text" data-splitting>Мы выполнили <br class="hidden-mobile"><span class="orange">>8300 заказов</span></h5>
+                    <p class="p1 cases__subtitle">
+                        Посмотрите на наши <span>реальные работы</span>
+                        и убедитесь, что <span>мы предоставляем услуги</span> <span>высокого качества.</span>
                     </p>
                 </div>
                 <div class="cases__action">
@@ -612,7 +614,7 @@
                         <ul class="dropdown__menu hidden"></ul>
                     </div>
 
-                    <div class="button__wrapper">
+                    <div class="cases__button-wrapper button__wrapper">
                         <button class="button cases__button">Связаться</button>
                         <button class="button--arrow">
                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -622,13 +624,14 @@
                         </button>
                     </div>
                 </div>
-                <div class="cases__swiper swiper">
-                    <div class="cases__swiper-wrapper swiper-wrapper">
-                        <div class="cases__swiper-slide swiper-slide">
-                            <div class="swiper__title">
-                                <h2 class="swiper__header">Уборка офиса</h2>
-                                <div class="swiper__features-wrapper">
-                                    <div class="card-features swiper__features">
+                <div class="cases__splide splide">
+                    <div class="splide__track">
+                    <div class="cases__splide-wrapper splide__list">
+                        <div class="cases__splide-slide splide__slide">
+                            <div class="slider__title">
+                                <h2 class="slider__header">Уборка офиса</h2>
+                                <div class="slider__features-wrapper">
+                                    <div class="card-features slider__features">
                                         <img
                                                 src="./icons/profile.svg"
                                                 alt=""
@@ -637,7 +640,7 @@
                                         >
                                         <span>ЮР.лицо</span>
                                     </div>
-                                    <div class="swiper__features card-features">
+                                    <div class="slider__features card-features">
                                         <img
                                                 src="./icons/service/area.svg"
                                                 alt=""
@@ -652,15 +655,15 @@
                             <img
                                     src="./images/cases/office.png"
                                     alt=""
-                                    class="swiper__image"
+                                    class="slider__image"
                                     width="636" height="370"
                             >
                         </div>
-                        <div class="cases__swiper-slide swiper-slide">
-                            <div class="swiper__title">
-                                <h2 class="swiper__header">Мойка фасадов</h2>
-                                <div class="swiper__features-wrapper">
-                                    <div class="card-features swiper__features">
+                        <div class="cases__splide-slide splide__slide">
+                            <div class="slider__title">
+                                <h2 class="slider__header">Мойка фасадов</h2>
+                                <div class="slider__features-wrapper">
+                                    <div class="card-features slider__features">
                                         <img
                                                 src="./icons/profile.svg"
                                                 alt=""
@@ -669,7 +672,7 @@
                                         >
                                         <span>ЮР.лицо</span>
                                     </div>
-                                    <div class="swiper__features card-features">
+                                    <div class="slider__features card-features">
                                         <img
                                                 src="./icons/service/area.svg"
                                                 alt=""
@@ -684,15 +687,15 @@
                             <img
                                     src="./images/cases/rusgidro.png"
                                     alt=""
-                                    class="swiper__image"
+                                    class="slider__image"
                                     width="636" height="370"
                             >
                         </div>
-                        <div class="cases__swiper-slide swiper-slide">
-                            <div class="swiper__title">
-                                <h2 class="swiper__header">Уборка офиса</h2>
-                                <div class="swiper__features-wrapper">
-                                    <div class="card-features swiper__features">
+                        <div class="cases__splide-slide splide__slide">
+                            <div class="slider__title">
+                                <h2 class="slider__header">Уборка офиса</h2>
+                                <div class="slider__features-wrapper">
+                                    <div class="card-features slider__features">
                                         <img
                                                 src="./icons/profile.svg"
                                                 alt=""
@@ -701,7 +704,7 @@
                                         >
                                         <span>ЮР.лицо</span>
                                     </div>
-                                    <div class="swiper__features card-features">
+                                    <div class="slider__features card-features">
                                         <img
                                                 src="./icons/service/area.svg"
                                                 alt=""
@@ -716,15 +719,15 @@
                             <img
                                     src="./images/cases/office.png"
                                     alt=""
-                                    class="swiper__image"
+                                    class="slider__image"
                                     width="636" height="370"
                             >
                         </div>
-                        <div class="cases__swiper-slide swiper-slide">
-                            <div class="swiper__title">
-                                <h2 class="swiper__header">Уборка офиса</h2>
-                                <div class="swiper__features-wrapper">
-                                    <div class="card-features swiper__features">
+                        <div class="cases__splide-slide splide__slide">
+                            <div class="slider__title">
+                                <h2 class="slider__header">Уборка офиса</h2>
+                                <div class="slider__features-wrapper">
+                                    <div class="card-features slider__features">
                                         <img
                                                 src="./icons/profile.svg"
                                                 alt=""
@@ -733,7 +736,7 @@
                                         >
                                         <span>ЮР.лицо</span>
                                     </div>
-                                    <div class="swiper__features card-features">
+                                    <div class="slider__features card-features">
                                         <img
                                                 src="./icons/service/area.svg"
                                                 alt=""
@@ -748,10 +751,11 @@
                             <img
                                     src="./images/cases/office.png"
                                     alt=""
-                                    class="swiper__image"
+                                    class="slider__image"
                                     width="636" height="370"
                             >
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
