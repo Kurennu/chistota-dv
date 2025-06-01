@@ -173,7 +173,24 @@
                     </button>
                 </div>
             </div>
-
+<!--            <div class="hero__splide splide">-->
+<!--                <div class="hero__splide-track splide__track">-->
+<!--                    <ul class="splide__list">-->
+<!--                        <li class="hero__splide-slide splide__slide" data-splide-html-video="./video/intro_video_1.mp4">-->
+<!--                            <img src="/images/video-preview/1.png">-->
+<!--                        </li>-->
+<!--                        <li class="splide__slide" data-splide-html-video="./video/intro_video_2.mp4">-->
+<!--                            <img src="/images/video-preview/2.png">-->
+<!--                        </li>-->
+<!--                        <li class="splide__slide" data-splide-html-video="./video/intro_video_3.mp4">-->
+<!--                            <img src="/images/video-preview/1.png">-->
+<!--                        </li>-->
+<!--                        <li class="splide__slide" data-splide-html-video="./video/intro_video_3.mp4">-->
+<!--                            <img src="/images/video-preview/2.png">-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
         </section>
         <section class="about">
             <div class="about__inner">
@@ -575,29 +592,17 @@
                         <div class="cta__cell">
                             <input
                                     class="cta__cell-input"
-                                    placeholder="Квадратура"
+                                    placeholder="Имя"
                             />
                         </div>
-                        <div class="cta__cell">
-                            <div class="cta__cell-input dropdown">
-                                <button class="dropdown__toggle cta__cell-select">
-                                    Выбор услуги
-                                </button>
-                                <ul class="dropdown__menu hidden"></ul>
-                            </div>
-                        </div>
+
                         <div class="cta__cell">
                             <input
                                     class="cta__cell-input"
                                     placeholder="Номер телефона"
                             />
                         </div>
-                        <div class="cta__cell">
-                            <input
-                                    class="cta__cell-input"
-                                    placeholder="Имя"
-                            />
-                        </div>
+
                         <div class="cta__cell cta__cell--long">
                             <input
                                     class="cta__cell-input cta__cell-input--long"
@@ -605,7 +610,7 @@
                             />
                         </div>
                         <div class="cta__policy">
-                            <input type="checkbox" class="policy__checkbox" name="" id="policy">
+                            <input type="checkbox" class="policy__checkbox" name="" id="policy" checked>
                             <label for="policy" class="policy__label">
                                 С правилами <a href="/">политики конфиденциальности</a> ознакомлен
                             </label>
@@ -613,7 +618,6 @@
                     </div>
                     <div class="cta__action">
                         <button type="submit" class="button cta__button">Оставить заявку</button>
-                        <p class="cta__price">Итого: 2 500₽</p>
                     </div>
                 </form>
             </div>
@@ -942,40 +946,28 @@
                     <div class="faq__form-wrapper">
                         <form action="" class="faq__form">
                             <div class="faq__fields">
-                                <div class="faq__cell">
-                                    <input
-                                            class="faq__cell-input"
-                                            placeholder="Татьяна"
-                                    />
-                                </div>
-                                <div class="faq__cell">
-                                    <input
-                                            class="faq__cell-input"
-                                            placeholder="6 900 м2"
-                                    />
-                                </div>
-                                <div class="faq__cell">
-                                    <div class="faq__cell-input dropdown-faq">
-                                        <button class="faq__toggle dropdown__toggle">
-                                        </button>
-                                        <ul class="dropdown__menu hidden"></ul>
+                                <div class="faq__row">
+                                    <div class="faq__cell">
+                                        <input
+                                                class="faq__cell-input"
+                                                placeholder="Имя"
+                                        />
                                     </div>
-
+                                    <div class="faq__cell">
+                                        <input
+                                                class="faq__cell-input"
+                                                placeholder="Номер телефона"
+                                        />
+                                    </div>
                                 </div>
-                                <div class="faq__cell">
+                                <div class="faq__cell--long">
                                     <input
-                                            class="faq__cell-input"
-                                            placeholder="Номер телефона"
-                                    />
-                                </div>
-                                <div class="faq__cell">
-                                    <input
-                                            class="faq__cell-input"
+                                            class="faq__cell-input--long"
                                             placeholder="Уточните свой вопрос"
                                     />
                                 </div>
                                 <div class="policy">
-                                    <input type="checkbox" class="policy__checkbox" name="">
+                                    <input type="checkbox" class="policy__checkbox" name="" checked>
                                     <label for="policy" class="policy__label">
                                         С правилами <a href="/">политики конфиденциальности</a> ознакомлен
                                     </label>
@@ -983,7 +975,6 @@
                             </div>
                             <div class="faq__action">
                                 <button type="submit" class="button faq__button"><span>Оставить заявку</span></button>
-                                <p class="faq__price">Итого: 2 500₽</p>
                             </div>
                         </form>
                     </div>

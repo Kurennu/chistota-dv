@@ -50,7 +50,7 @@
       gap: rem(24);
       order: 1;
       margin-bottom: rem(32);
-      padding-inline: 20px;
+      padding-inline: rem(20);
     }
   }
 
@@ -70,7 +70,7 @@
 
     @include tablet{
       order: 2;
-      padding-inline: 20px;
+      padding-inline: rem(20);
       margin-bottom: rem(32);
     }
   }
@@ -81,27 +81,6 @@
     @include tablet{
       order: 4;
       padding-inline: 0;
-    }
-
-    &::after{
-      position: absolute;
-      content: "";
-      width: rem(620);
-      height: rem(43);
-      background: url("/images/faq/form-back.svg") no-repeat;
-      background-size: 100% 100%;
-      transform-origin: bottom right;
-      right: rem(10);
-      bottom: -21px;
-      z-index: 50;
-
-      @include laptop{
-        transform: scale(0.86);
-        bottom: -18px;
-      }
-      @include tablet{
-        display: none;
-      }
     }
   }
 
@@ -148,38 +127,31 @@
     }
   }
 
-
-  &__cell:nth-child(-n+3) .faq__cell-input {
-    width: rem(176);
-    @include laptop{
-      width: 100%;
-    }
-  }
-
-  &__cell:nth-child(n+4):nth-child(-n+5) .faq__cell-input {
-    width: rem(272);
-
-    @include mobile-s{
-      &:last-child {
-        width: 100% !important;
-      }
-    }
+  &__row {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
   }
 
   &__cell{
+    width: 100%;
     @include mobile-s{
       &:nth-child(5){
         width: 100% !important;
       }
     }
 
-
     @include mobile-s{
       width: rem(163);
+    }
+
+    &--long{
+      width: 100%;
     }
   }
 
   &__cell-input{
+    width: 100%;
     border: 1px solid var(--color-gray-50);
     border-radius: rem(8);
     padding: rem(8) rem(12);
@@ -211,6 +183,11 @@
         color: var(--color-gray-250);
       }
     }
+
+    &--long{
+      @extend .faq__cell-input;
+      width: 100%;
+    }
   }
 
 
@@ -230,6 +207,7 @@
     width: rem(344);
     line-height: rem(17);
     text-wrap: nowrap;
+    width: 100%;
 
     @include laptop{
       width: 60%;
@@ -322,6 +300,5 @@
     font-weight: 400;
     font-size: rem(18);
     margin-top: rem(16);
-
   }
 }

@@ -2,7 +2,6 @@
 
 .service{
   @include tablet{
-    padding-inline: 80px;
   }
 
   @include mobile{
@@ -102,6 +101,9 @@
     &:nth-child(3){ box-shadow: 0 -9px 0 -1px var(--color-blue-200);}
     &:nth-child(4){ box-shadow: 0 -9px 0 -1px var(--color-blue-300);}
 
+    @include tablet{
+      top: rem(90);
+    }
 
     @include mobile{
       padding: rem(20);
@@ -186,6 +188,7 @@
 
       @include tablet{
         justify-content: center;
+        height: 300px;
       }
 
       &-wrapper{
@@ -209,6 +212,9 @@
 
       @include tablet{
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
       }
     }
   }

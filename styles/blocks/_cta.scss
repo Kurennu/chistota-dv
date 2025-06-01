@@ -26,11 +26,13 @@
   }
 
   &__main{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: rem(67);
 
     @include tablet{
+      width: 100%;
       padding-inline: rem(20);
       row-gap: rem(40);
     }
@@ -101,7 +103,7 @@
     border-radius: rem(20);
     display: flex;
     flex-direction: column;
-    row-gap: rem(40);
+    justify-content: space-between;
 
     @include laptop{
       width: 50%;
@@ -135,7 +137,8 @@
   &__fields{
     display: flex;
     flex-wrap: wrap;
-    gap: rem(24);
+    column-gap: rem(24);
+    row-gap: rem(40);
     min-width: 596px;
 
     @include laptop{
@@ -219,9 +222,10 @@
   }
 
   &__button{
+    width: 100%;
+    text-wrap: nowrap;
 
     @include tablet{
-      width: 100%;
       line-height: rem(17);
       padding-block: rem(19);
     }

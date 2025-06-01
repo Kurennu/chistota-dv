@@ -2,10 +2,31 @@
 
 .hero{
   padding: rem(40) rem(70);
+  display: flex;
+  width: 100%;
+
+  &__splide{
+    width: 100%;
+
+    &-slide{
+      min-width: 473px;
+      min-height: 689px;
+
+      &:not(.is-active){
+
+        img{
+          width: 241px !important;
+          height: 315px !important;
+        }
+
+      }
+    }
+  }
 
   &__main{
     display: flex;
     justify-content: space-between;
+    min-width: rem(514);
   }
   &__body{
     display: flex;

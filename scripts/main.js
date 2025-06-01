@@ -11,6 +11,7 @@ import { initServiceCarouselL } from './serviceCarouselLeft.js';
 import { initScrollWordAnimation } from'./splittingHeaders';
 import { initHeader } from'./header.js';
 import { initExpandableText } from "./serviceCardText";
+import { initHeroSlider } from "./heroSplide";
 
 document.addEventListener('DOMContentLoaded', () => {
     initTypewriterHero();
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollWordAnimation();
     initHeader();
     initExpandableText();
+    initHeroSlider();
 
     initDropdown({
         containerSelector: '.dropdown',
