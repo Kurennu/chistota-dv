@@ -30,7 +30,7 @@
   }
 
   &__subtitle{
-    max-width: 33%;
+    max-width: 50%;
 
     @include tablet{
       max-width: 45%;
@@ -113,8 +113,12 @@
     @include mobile{
       width: 100%;
     }
-    &-wrapper{
 
+    &--arrow{
+      min-width: rem(55);
+      aspect-ratio: 1;
+    }
+    &-wrapper{
       @include mobile{
         order: 3;
       }

@@ -40,7 +40,7 @@
                             src="./icons/logo.svg"
                             alt="Чистота ДВ"
                             class="header__logo"
-                            width="136" height="26"
+                            width="163" height="26"
                     >
                 </a>
 
@@ -108,105 +108,264 @@
         </div>
     </header>
     <main>
-        <section class="hero hidden-mobile">
-            <div class="hero__main">
-                <div class="hero__body">
-                    <div class="hero__header-inner">
-                        <h3 class="hero__header splitting-text" data-splitting>
-                            С нами у вас всегда <br>
-                            <span class="hero__header-print" id="typewriter"></span>
-                        </h3>
-                        <p class="hero__subheader">
-                            Профессиональный клининг для дома и офиса с гарантией качества.
-                        </p>
+        <section class="hero">
+            <div class="hero__main hidden-tablet">
+                    <div class="hero__body">
+                        <div class="hero__header-inner">
+                            <h3 class="hero__header splitting-text" data-splitting>
+                                С нами у вас всегда <br>
+                                <span class="hero__header-print"></span>
+                            </h3>
+                            <p class="hero__subheader">
+                                Профессиональный клининг для дома и офиса с гарантией качества.
+                            </p>
 
-                        <div class="hero__review">
-                            <button class="review-button">
-                                <img
-                                        src="./icons/VL.png"
-                                        alt="VL.ru"
-                                        class="hero__review-logo"
-                                        width="32" height="32"
-                                >
-                                <span>4.9</span>
-                                <img
-                                        src="./icons/star.svg"
-                                        alt=""
-                                        class=""
-                                        width="20" height="20"
-                                >
-                            </button>
-                            <button class="review-button">
-                                <img
-                                        src="./icons/Yandex.png"
-                                        alt="Яндекс"
-                                        class="hero__review-logo"
-                                        width="32" height="32"
-                                >
-                                <span>4.9</span>
-                                <img
-                                        src="./icons/star.svg"
-                                        alt=""
-                                        class=""
-                                        width="20" height="20"
-                                >
-                            </button>
-                            <button class="review-button">
-                                <img
-                                        src="./icons/2gis.png"
-                                        alt="2gis"
-                                        class="hero__review-logo"
-                                        width="32" height="32"
-                                >
-                                <span>4.9</span>
-                                <img
-                                        src="./icons/star.svg"
-                                        alt=""
-                                        class=""
-                                        width="20" height="20"
-                                >
+                            <div class="hero__review">
+                                <button class="review-button">
+                                    <img
+                                            src="./icons/VL.png"
+                                            alt="VL.ru"
+                                            class="hero__review-logo"
+                                            width="32" height="32"
+                                    >
+                                    <span>4.9</span>
+                                    <img
+                                            src="./icons/star.svg"
+                                            alt=""
+                                            class=""
+                                            width="20" height="20"
+                                    >
+                                </button>
+                                <button class="review-button">
+                                    <img
+                                            src="./icons/Yandex.png"
+                                            alt="Яндекс"
+                                            class="hero__review-logo"
+                                            width="32" height="32"
+                                    >
+                                    <span>4.9</span>
+                                    <img
+                                            src="./icons/star.svg"
+                                            alt=""
+                                            class=""
+                                            width="20" height="20"
+                                    >
+                                </button>
+                                <button class="review-button">
+                                    <img
+                                            src="./icons/2gis.png"
+                                            alt="2gis"
+                                            class="hero__review-logo"
+                                            width="32" height="32"
+                                    >
+                                    <span>4.9</span>
+                                    <img
+                                            src="./icons/star.svg"
+                                            alt=""
+                                            class=""
+                                            width="20" height="20"
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hero__button-wrapper button__wrapper">
+                            <button class="button hero__button">Заказать уборку</button>
+                            <button class="hero__button--arrow button--arrow">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5713 8.5H1.42915" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M8.50022 15.5711L15.5713 8.5L8.50022 1.42893" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
                             </button>
                         </div>
                     </div>
-                    <button class="hero__button button">
-                        Заказать уборку
-                    </button>
                 </div>
-            </div>
             <div class="hero__splide splide">
+                <div class="hero__advantages">
+                    <div class="hero__advantages-item">
+                        <p class="hero__advantages-title">Успех гарантирован</p>
+                        <div class="hero__advantages-info">
+                            <p class="hero__advantages-value"><span>+50</span> чел</p>
+                            <p class="hero__advantages-label">в команде</p>
+                        </div>
+                    </div>
+                    <div class="hero__advantages-item">
+                        <p class="hero__advantages-title">Работаем с 2019 г</p>
+                        <div class="hero__advantages-info">
+                            <p class="hero__advantages-value"><span>+5</span> лет</p>
+                            <p class="hero__advantages-label">В этой сфере</p>
+                        </div>
+                    </div>
+                    <div class="hero__advantages-item">
+                        <p class="hero__advantages-title">В надежных руках</p>
+                        <div class="hero__advantages-info">
+                            <p class="hero__advantages-value"><span>+20к</span> м2</p>
+                            <p class="hero__advantages-label">Вычищаем/мес</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="hero__splide-track splide__track">
                     <ul class="splide__list">
                         <li class="hero__splide-slide splide__slide">
+                            <div class="hero__splide-slide-inner">
                                 <video
                                         src="./video/intro_video_1.mp4"
                                         preload="metadata"
                                         muted
                                         playsinline
                                 ></video>
+                            </div>
                         </li>
                         <li class="hero__splide-slide splide__slide">
-                            <video
-                                    src="./video/intro_video_2.mp4"
-                                    preload="metadata"
-                                    muted
-                                    playsinline
-                            ></video>
+                            <div class="hero__splide-slide-inner">
+                                <video
+                                        src="./video/intro_video_2.mp4"
+                                        preload="metadata"
+                                        muted
+                                        playsinline
+                                ></video>
+                            </div>
                         </li>
                         <li class="hero__splide-slide splide__slide">
+                            <div class="hero__splide-slide-inner">
                             <video
                                     src="./video/intro_video_3.mp4"
                                     preload="metadata"
                                     muted
                                     playsinline
                             ></video>
+                            </div>
                         </li>
                         <li class="hero__splide-slide splide__slide">
+                            <div class="hero__splide-slide-inner">
                             <video
                                     src="./video/intro_video_4.mp4"
                                     preload="metadata"
                                     muted
                                     playsinline
                             ></video>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hero__main-mobile hero__main splide visible-tablet">
+                <div class="hero__main-track splide__track">
+                    <ul class="splide__list">
+                        <li class="hero__main-slide splide__slide visible-tablet">
+                            <video autoplay muted loop playsinline class="hero__mobile-video ">
+                                <source src="./video/intro_video_1.mp4" type="video/mp4">
+                            </video>
+
+                            <div class="hero__overlay visible-tablet"></div>
+                            <div class="hero__body">
+                                <div class="hero__header-inner">
+                                    <h3 class="hero__header splitting-text" data-splitting>
+                                        С нами у вас всегда <br class="visible-tablet">
+                                        <span class="hero__header-print"></span>
+                                    </h3>
+                                    <p class="hero__subheader">
+                                        Профессиональный клининг для дома и офиса с гарантией качества.
+                                    </p>
+
+
+                                </div>
+                                <div class="hero__mobile-extra">
+                                    <div class="hero__review">
+                                        <button class="review-button">
+                                            <img
+                                                    src="./icons/VL.png"
+                                                    alt="VL.ru"
+                                                    class="hero__review-logo"
+                                                    width="32" height="32"
+                                            >
+                                            <span>4.9</span>
+                                            <img
+                                                    src="./icons/star.svg"
+                                                    alt=""
+                                                    class="hidden-tablet"
+                                                    width="20" height="20"
+                                            >
+                                        </button>
+                                        <button class="review-button">
+                                            <img
+                                                    src="./icons/Yandex.png"
+                                                    alt="Яндекс"
+                                                    class="hero__review-logo"
+                                                    width="32" height="32"
+                                            >
+                                            <span>4.9</span>
+                                            <img
+                                                    src="./icons/star.svg"
+                                                    alt=""
+                                                    class="hidden-tablet"
+                                                    width="20" height="20"
+                                            >
+                                        </button>
+                                        <button class="review-button">
+                                            <img
+                                                    src="./icons/2gis.png"
+                                                    alt="2gis"
+                                                    class="hero__review-logo"
+                                                    width="32" height="32"
+                                            >
+                                            <span>4.9</span>
+                                            <img
+                                                    src="./icons/star.svg"
+                                                    alt=""
+                                                    class="hidden-tablet"
+                                                    width="20" height="20"
+                                            >
+                                        </button>
+                                    </div>
+                                    <div class="button__wrapper">
+                                        <button class="hero__button button">
+                                            Заказать уборку
+                                        </button>
+                                        <button class="hero__button--arrow button--arrow">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.5713 8.5H1.42915" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M8.50022 15.5711L15.5713 8.5L8.50022 1.42893" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hero__main-slide splide__slide">
+                            <div class="hero__advantages-mobile">
+                                <div class="hero__advantages-item">
+                                    <p class="hero__advantages-title">Успех гарантирован</p>
+                                    <div class="hero__advantages-info">
+                                        <p class="hero__advantages-value"><span>+50</span> чел</p>
+                                        <p class="hero__advantages-label">в команде</p>
+                                    </div>
+                                </div>
+                                <div class="hero__advantages-item">
+                                    <p class="hero__advantages-title">Работаем с 2019 г</p>
+                                    <div class="hero__advantages-info">
+                                        <p class="hero__advantages-value"><span>+5</span> лет</p>
+                                        <p class="hero__advantages-label">В этой сфере</p>
+                                    </div>
+                                </div>
+                                <div class="hero__advantages-item">
+                                    <p class="hero__advantages-title">В надежных руках</p>
+                                    <div class="hero__advantages-info">
+                                        <p class="hero__advantages-value"><span>+20к</span> м2</p>
+                                        <p class="hero__advantages-label">Вычищаем/мес</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button__wrapper hero__button-wrap">
+                                <button class="hero__button button">
+                                    Заказать уборку
+                                </button>
+                                <button class="hero__button--arrow button--arrow">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.5713 8.5H1.42915" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8.50022 15.5711L15.5713 8.5L8.50022 1.42893" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -254,8 +413,8 @@
                             width="65" height="29"
                     >
                 </div>
-                <p class="about__subheader">— клининг с безупречной репутацией.<br class="hidden-mobile"> С 2015 года создаем идеальную чистоту <span>для домов</span> и <span>бизнеса</span>, используя профессиональные методы и премиальную химию.</p>
-                <button class="about__button button">Заказать уборку</button>
+                <p class="about__subheader">— клининг с безупречной репутацией.<br class="hidden-mobile"> С 2020 года создаем идеальную чистоту <span>для домов</span> и <span>бизнеса</span>, используя профессиональные методы и премиальную химию.</p>
+
                 <div class="carousel__wrapper">
                     <div class="carousel__track">
 
@@ -294,6 +453,7 @@
                         <div class="carousel__slide"><img src="./images/about/dalpribor.png" width="63" height="63" alt="" loading="lazy"></div>
                     </div>
                 </div>
+                <button class="about__button button">Заказать уборку</button>
 
             </div>
         </section>
@@ -642,6 +802,99 @@
                 </form>
             </div>
         </section>
+        <section class="team container hidden-mobile">
+            <h5 class="team__header h5 splitting-text" data-splitting>Сотрудники <span class="orange">Компании</span></h5>
+            <div class="team__splide splide">
+                <div class="team__splide-track splide__track">
+                    <ul class="team__splide-list splide__list">
+                        <li class="team__splide-slide splide__slide">
+                            <img
+                                    src="./images/team/person1.png"
+                                    alt=""
+                                    class="team__img"
+                                    width="307" height="370"
+                            >
+                            <div class="team__info">
+                                <p class="team__info-name">Имя Фамилия</p>
+                                <p class="team__info-post">Должность</p>
+                            </div>
+                        </li>
+                        <li class="team__splide-slide splide__slide">
+                            <img
+                                    src="./images/team/person2.png"
+                                    alt=""
+                                    class="team__img"
+                                    width="307" height="370"
+                            >
+                            <div class="team__info">
+                                <p class="team__info-name">Имя Фамилия</p>
+                                <p class="team__info-post">Должность</p>
+                            </div>
+                        </li>
+                        <li class="team__splide-slide splide__slide">
+                            <img
+                                    src="./images/team/person3.png"
+                                    alt=""
+                                    class="team__img"
+                                    width="307" height="370"
+                            >
+                            <div class="team__info">
+                                <p class="team__info-name">Имя Фамилия</p>
+                                <p class="team__info-post">Должность</p>
+                            </div>
+                        </li>
+                        <li class="team__splide-slide splide__slide">
+                            <img
+                                    src="./images/team/person4.png"
+                                    alt=""
+                                    class="team__img"
+                                    width="307" height="370"
+                            >
+                            <div class="team__info">
+                                <p class="team__info-name">Имя Фамилия</p>
+                                <p class="team__info-post">Должность</p>
+                            </div>
+                        </li>
+                        <li class="team__splide-slide splide__slide">
+                            <img
+                                    src="./images/team/person1.png"
+                                    alt=""
+                                    class="team__img"
+                                    width="307" height="370"
+                            >
+                            <div class="team__info">
+                                <p class="team__info-name">Имя Фамилия</p>
+                                <p class="team__info-post">Должность</p>
+                            </div>
+                        </li>
+                        <li class="team__splide-slide splide__slide">
+                            <img
+                                    src="./images/team/person3.png"
+                                    alt=""
+                                    class="team__img"
+                                    width="307" height="370"
+                            >
+                            <div class="team__info">
+                                <p class="team__info-name">Имя Фамилия</p>
+                                <p class="team__info-post">Должность</p>
+                            </div>
+                        </li>
+                        <li class="team__splide-slide splide__slide">
+                            <img
+                                    src="./images/team/person4.png"
+                                    alt=""
+                                    class="team__img"
+                                    width="307" height="370"
+                            >
+                            <div class="team__info">
+                                <p class="team__info-name">Имя Фамилия</p>
+                                <p class="team__info-post">Должность</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <section class="cases">
             <div class="cases__inner container">
                 <div class="cases__title">
@@ -659,9 +912,31 @@
                         <ul class="dropdown__menu hidden"></ul>
                     </div>
 
-                    <div class="cases__button-wrapper button__wrapper">
+                    <div class="controls hidden-mobile">
+                            <button id="btnPrev" class="cases__controls-prev controls__button controls__prev">
+                                <img
+                                        src="./icons/arrow-left.svg"
+                                        alt="Назад"
+                                        class="controls__img"
+                                        width="24" height="24"
+                                >
+                            </button>
+
+                            <p id="casesCurrent" class="cases__controls-current controls__current"></p>
+
+                            <button id="btnNext" class="cases__controls-next controls__button controls__next">
+                                <img
+                                        src="./icons/arrow-right.svg"
+                                        alt="Вперед"
+                                        class="controls__img"
+                                        width="24" height="24"
+                                >
+                            </button>
+                    </div>
+
+                    <div class="cases__button-wrapper button__wrapper visible-mobile">
                         <button class="button cases__button">Связаться</button>
-                        <button class="button--arrow">
+                        <button class="cases__button--arrow button--arrow">
                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15.5713 8.5H1.42915" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M8.50022 15.5711L15.5713 8.5L8.50022 1.42893" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -861,23 +1136,23 @@
                             >
                         </button>
                     </div>
-                    <div class="ms-slide__controls hidden-mobile">
-                        <button class="ms-slide__controls-button ms-slide__controls-prev">
+                    <div class="controls hidden-mobile">
+                        <button class="reviews__controls-prev controls__button controls__prev">
                             <img
                                     src="./icons/arrow-left.svg"
                                     alt="Назад"
-                                    class="ms-slide__controls-img"
+                                    class="controls__img"
                                     width="24" height="24"
                             >
                         </button>
 
-                        <p class="ms-slide__controls-current"></p>
+                        <p class="reviews__controls-current controls__current"></p>
 
-                        <button class="ms-slide__controls-button ms-slide__controls-next">
+                        <button class="reviews__controls-next controls__button controls__next">
                             <img
                                     src="./icons/arrow-right.svg"
                                     alt="Вперед"
-                                    class=""
+                                    class="controls__img"
                                     width="24" height="24"
                             >
                         </button>
@@ -1045,6 +1320,12 @@
         <div class="footer__inner container">
             <div class="footer__body">
                 <div class="footer__info">
+                    <img
+                            src="./icons/logo.svg"
+                            alt="Чистота ДВ"
+                            class="footer__logo"
+                            width="163" height="26"
+                    >
                     <p class="p1 footer__title">Ясность нашей позиции очевидна: высокое качество позиционных исследований играет определяющее значение для системы массового участия</p>
                     <div class="footer__socials-wrapper">
                         <a href="" class="footer__socials-logo">

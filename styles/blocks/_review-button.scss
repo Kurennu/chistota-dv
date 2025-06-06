@@ -11,6 +11,19 @@
   font-size: rem(20);
   font-weight: 500;
   line-height: rem(14);
+  position: relative;
+
+  &:not(:last-child){
+    &::after{
+      content: "";
+      right: -10px;
+      position: absolute;
+      height: rem(32);
+      border-radius: 50%;
+      width: 1px;
+      background-color: var(--color-gray-50);
+    }
+  }
 
 
   @include hover{

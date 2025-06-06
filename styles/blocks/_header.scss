@@ -8,6 +8,11 @@
   top: 0;
   background-color: var(--color-white);
   border-bottom: 1px solid #E5E5E5;
+  transition: transform 0.3s ease-in-out;
+
+  &.nav-up {
+    transform: translateY(-100%);
+  }
 
   &__body {
     &-inner{

@@ -55,22 +55,30 @@
     right: 0;
     z-index: 10;
     border: 1px solid var(--color-gray-50);
+    border-radius: rem(10);
+    margin-top: rem(16);
 
     li {
       cursor: pointer;
       text-align: left;
-      padding: rem(21) rem(32);
-      color: var(--color-black);
+      padding: rem(12) rem(20);
       display: flex;
       justify-content: space-between;
       align-items: center;
+      color: var(--color-gray-200);
+
+      &:first-child{
+        border-top-right-radius: rem(10);
+        border-top-left-radius: rem(10);
+      }
 
       @include hover{
         background-color: var(--color-gray-50);
       }
 
       &.selected {
-        background-color: var(--color-gray-50);
+        color: var(--color-black);
+        background-color: var(--color-gray-100);
         position: relative;
       }
 

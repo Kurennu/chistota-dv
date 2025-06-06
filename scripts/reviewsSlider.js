@@ -91,9 +91,9 @@ function createReviewSlide(review) {
 
 export function initReviewsSlider() {
     const slidersContainer = document.querySelector('.ms-slide__container');
-    const prevButton = document.querySelector('.ms-slide__controls-prev');
-    const nextButton = document.querySelector('.ms-slide__controls-next');
-    const currentSlideIndicator = document.querySelector('.ms-slide__controls-current');
+    const prevButton = document.querySelector('.reviews__controls-prev');
+    const nextButton = document.querySelector('.reviews__controls-next');
+    const currentSlideIndicator = document.querySelector('.reviews__controls-current');
 
     const mobileMediaQuery = window.matchMedia('(max-width: 768px)');
 

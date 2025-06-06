@@ -8,7 +8,6 @@
   color: var(--color-white);
   border-radius: rem(14);
   padding: 16px 50px;
-  line-height: normal;
   font-weight: 500;
   font-size: rem(24);
   text-transform: uppercase;
@@ -32,8 +31,6 @@
   &--arrow {
     border-radius: 14px;
     padding: 16px;
-    width: 55px;
-    height: 55px;
     background-color: var(--color-blue);
     color: var(--color-white);
     border: none;

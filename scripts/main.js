@@ -12,6 +12,8 @@ import { initScrollWordAnimation } from'./splittingHeaders';
 import { initHeader } from'./header.js';
 import { initExpandableText } from "./serviceCardText";
 import { initHeroSlider } from "./heroSplide";
+import { initMobileHeroSlider } from "./mobileHeroSlider";
+import { initTeamSlider } from "./teamSlider";
 
 document.addEventListener('DOMContentLoaded', () => {
     initTypewriterHero();
@@ -25,6 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeader();
     initExpandableText();
     initHeroSlider();
+    initMobileHeroSlider();
+    initTeamSlider();
 
     initDropdown({
         containerSelector: '.dropdown',

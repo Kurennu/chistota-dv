@@ -8,6 +8,7 @@ export function initHeader() {
     const STATE_CLASSES = {
         isActive: 'is-active',
         isLock: 'is-lock',
+        navUp: 'nav-up',
     }
 
     const onBurgerButtonClick = () => {
@@ -17,4 +18,20 @@ export function initHeader() {
     }
 
     burgerButton.addEventListener('click', onBurgerButtonClick)
+
+    // === ДОБАВЛЕНА ЛОГИКА ПРОКРУТКИ ===
+    let lastScroll = 0
+    const scrollThreshold = 100
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.scrollY
+
+        if (currentScroll > lastScroll && currentScroll > scrollThreshold) {
+            root.classList.add(STATE_CLASSES.navUp)
+        } else {
+            root.classList.remove(STATE_CLASSES.navUp)
+        }
+
+        lastScroll = currentScroll
+    })
 }

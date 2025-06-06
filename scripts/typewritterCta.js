@@ -8,7 +8,7 @@ export function initTypewriterCta() {
 
     const typewriter = new Typewriter(el, {
         loop: true,
-        delay: 200,
+        delay: 80,
         deleteSpeed: 50,
     });
 
