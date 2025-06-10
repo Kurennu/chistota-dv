@@ -10,7 +10,7 @@
       padding-block: rem(60);
     }
 
-    @include mobile{
+    @include tablet{
       display: flex;
       flex-direction: column;
     }
@@ -28,7 +28,7 @@
       margin-bottom: rem(24);
     }
 
-    @include mobile{
+    @include tablet{
       order: 1;
     }
   }
@@ -51,7 +51,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @include mobile{
+    @include tablet{
       width: 100%;
       justify-content: flex-start;
       order: 2;
@@ -76,13 +76,10 @@
       height: rem(308);
       transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 
-      @include tablet{
-        width: rem(500);
-      }
 
-      @include mobile{
+      @include tablet{
         width: rem(320);
-        height: rem(368);
+        height: fit-content;
       }
 
       &-inner{
@@ -112,6 +109,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @include tablet{
+        margin-bottom: rem(32);
+      }
     }
 
     &-info{
@@ -134,7 +135,7 @@
       column-gap: rem(8);
       line-height: normal;
 
-      @include mobile{
+      @include tablet{
         flex-direction: column;
         align-items: flex-start;
         gap: rem(8);
@@ -148,7 +149,7 @@
       color: var(--color-black);
       line-height: rem(14);
 
-      @include mobile{
+      @include tablet{
         font-size: rem(18);
       }
     }
@@ -160,7 +161,7 @@
       color: var(--color-gray-200);
       line-height: rem(12);
 
-      @include mobile{
+      @include tablet{
         font-size: rem(14);
       }
     }
@@ -172,7 +173,7 @@
     color: var(--color-black);
     line-height: rem(17);
 
-    @include mobile{
+    @include tablet{
       font-size: rem(18);
       line-height: rem(13);
     }
@@ -181,11 +182,25 @@
   &__body{
     font-family: var(--font-family-accent);
     font-weight: 400;
-    font-size: rem(24);
+    font-size: rem(18);
     color: var(--color-black);
 
-    @include mobile{
+    @include tablet{
+      order: 1;
+    }
+
+    @include tablet{
       font-size: rem(20);
+    }
+
+    &-wrapper{
+      display: flex;
+      flex-direction: column;
+      gap: rem(40);
+
+      @include tablet{
+        display: contents;
+      }
     }
   }
 
@@ -203,6 +218,10 @@
     @include hover{
       background-color: var(--color-white);
       transition-duration: var(--transition-duration);
+    }
+
+    @include tablet{
+      order: 3;
     }
 
     &-title{
@@ -223,7 +242,7 @@
       max-width: rem(64);
       max-height: rem(64);
 
-      @include mobile{
+      @include tablet{
         max-width: rem(59);
         max-height: rem(59);
       }
@@ -233,6 +252,43 @@
   &__links{
     display: flex;
     gap: rem(17);
+  }
+
+  &__content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: rem(40);
+
+    @include tablet{
+      flex-direction: column;
+      gap: rem(16);
+      height: 100%;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    border-radius: rem(20);
+    object-fit: cover;
+
+    &-wrapper {
+      min-width: rem(288);
+      min-height: rem(152);
+
+      @include tablet{
+        max-width: rem(280);
+        max-height: rem(152);
+
+        min-width: auto;
+        min-height: auto;
+      }
+
+      @include tablet{
+        order: 2;
+      }
+    }
   }
 }
 

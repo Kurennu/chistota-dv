@@ -113,7 +113,7 @@
     &-body{
       display: flex;
       justify-content: space-between;
-      width: 100%;
+      gap: rem(40);
 
       @include laptop{
         align-items: center;
@@ -121,11 +121,13 @@
 
       @include tablet{
         flex-direction: column;
+        gap: 0;
+
       }
     }
 
     &-main{
-      width: 48%;
+      width: 50%;
 
       @include tablet{
         width: 100%;
@@ -141,6 +143,7 @@
 
       @include tablet{
         margin-bottom: rem(24);
+        font-size: rem(28);
       }
     }
 
@@ -182,28 +185,8 @@
       }
     }
 
-    &-photo{
-      display: flex;
-      justify-content: flex-end;
-
-      @include tablet{
-        justify-content: center;
-        height: 300px;
-      }
-
-      &-wrapper{
-        width: 50%;
-
-        @include tablet{
-          width: 100%;
-        }
-      }
-    }
 
     &-img{
-      width: 100%;
-      height: auto;
-      object-fit: contain;
       border-radius: rem(20);
 
       @include laptop {
@@ -224,16 +207,18 @@
     column-gap: rem(23);
     align-items: center;
 
+    @include container{
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: rem(32);
+    }
+
     @include tablet{
       margin-bottom: rem(32);
       justify-content: center;
     }
 
-    @include mobile{
-      flex-direction: column-reverse;
-      align-items: flex-start;
-      gap: rem(32);
-    }
+
   }
 
   &__price{
@@ -249,6 +234,8 @@
     padding-inline: rem(80) !important;
     height: rem(55);
     width: rem(425);
+    text-wrap: nowrap;
+    line-height: rem(17);
 
     @include mobile{
       width: rem(350);
@@ -258,6 +245,52 @@
       width: 100%;
     }
   }
+
+  &__progress{
+    background-color: var(--color-gray-100);
+
+    &-wrapper{
+      padding-inline: rem(50);
+      padding-top: rem(30);
+
+      @include tablet {
+        padding-top: rem(15);
+      }
+    }
+
+    &-bar {
+      background: var(--color-blue);
+      border-radius: rem(10);
+      height: rem(8);
+      transition: width 400ms ease;
+      width: 0;
+    }
+  }
+  &__splide{
+    transform-origin: center top;
+    &-wrap{
+      width: 100%;
+      transform: translateZ(0);
+      isolation: isolate;
+    }
+
+    &-slide{
+      border-radius: rem(20);
+    }
+  }
 }
 
+@for $i from 1 through 5 {
+  .service__card:nth-child(#{$i}) .service__splide {
+    $scale: calc(var(--base-scale) + ($i - 1) * var(--scale-step));
+    $inverse-scale: calc(1 / $scale);
+    transform: scale($inverse-scale);
+  }
+
+  .service__card:nth-child(#{$i}).is-active .service__splide {
+    $scale: calc(var(--base-scale) + ($i - 1) * var(--scale-step) + 0.02);
+    $inverse-scale: calc(1 / $scale);
+    transform: scale($inverse-scale);
+  }
+}
 

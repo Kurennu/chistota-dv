@@ -8,6 +8,8 @@ import iconYandex from '../icons/Yandex.png';
 import starIcon from '../icons/star.svg';
 import commasIcon from '../icons/commas.svg';
 
+import reviewImg1 from '../images/reviews/image1.png';
+
 
 const reviewsData = [
     {
@@ -19,7 +21,8 @@ const reviewsData = [
         link: {
             url: "https://2gis.ru/",
             text: "Читать на 2GIS",
-            icon: icon2gis
+            icon: icon2gis,
+            image: reviewImg1
         }
     },
     {
@@ -31,7 +34,7 @@ const reviewsData = [
         link: {
             url: "https://2gis.ru/",
             text: "Читать на Яндекс",
-            icon: iconYandex
+            icon: iconYandex,
         }
     },
     {
@@ -43,7 +46,8 @@ const reviewsData = [
         link: {
             url: "https://2gis.ru/",
             text: "Читать на 2GIS",
-            icon: icon2gis
+            icon: icon2gis,
+            image: reviewImg1
         }
     }
 ];
@@ -53,6 +57,14 @@ function createReviewSlide(review) {
     const starsHtml = Array(5).fill(0).map((_, i) => {
         return `<img src="${starIcon}" class="reviews__stars_img" width="20" height="20" style="opacity:${i < starsCount ? 1 : 0.3}">`;
     }).join('');
+
+    const reviewImageBlock = review.link.image
+        ? `
+          <div class="reviews__photo-wrapper">
+              <img src="${review.link.image}" alt="" class="reviews__photo" width="288" height="152">
+          </div>
+        `
+        : '';
 
     return `
       <div class="reviews__swiper-slide">
@@ -73,21 +85,27 @@ function createReviewSlide(review) {
                 </div>
               </div>
             </div>
-            <div class="reviews__user-commas hidden-mobile">
+            <div class="reviews__user-commas  hidden-tablet">
               <img src="${commasIcon}" alt="" class="reviews__commas" width="48" height="48">
             </div>
           </div>
-          <div class="reviews__body">
-            <span>${review.text}</span>
+          <div class="reviews__content">
+            <div class="reviews__body-wrapper">
+              <div class="reviews__body">
+                <span>${review.text}</span>
+              </div>
+              <button class="reviews__button" onclick="window.open('${review.link.url}', '_blank')">
+                <img src="${review.link.icon}" alt="" class="reviews__commas" width="40" height="40">
+                <span class="reviews__button-title">${review.link.text}</span>
+              </button>
+            </div>
+            ${reviewImageBlock}
           </div>
-          <button class="reviews__button" onclick="window.open('${review.link.url}', '_blank')">
-            <img src="${review.link.icon}" alt="" class="reviews__commas" width="40" height="40">
-            <span class="reviews__button-title">${review.link.text}</span>
-          </button>
         </div>
       </div>
     `;
 }
+
 
 export function initReviewsSlider() {
     const slidersContainer = document.querySelector('.ms-slide__container');

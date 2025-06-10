@@ -10,7 +10,7 @@
 @use './blocks/ms';
 @use './blocks/about';
 @use './blocks/carousel';
-@use './blocks/services';
+@use 'blocks/service';
 @use './blocks/other-carousel';
 @use './blocks/cta';
 @use './blocks/cases';
@@ -28,3 +28,4 @@
 @use './blocks/controls';
 @use './blocks/team';
 
+@use './blocks/modal';

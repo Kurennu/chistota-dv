@@ -14,6 +14,8 @@ import { initExpandableText } from "./serviceCardText";
 import { initHeroSlider } from "./heroSplide";
 import { initMobileHeroSlider } from "./mobileHeroSlider";
 import { initTeamSlider } from "./teamSlider";
+import { initServiceSliders } from "./serviceSlider";
+import { initModal } from "./modal.js"
 
 document.addEventListener('DOMContentLoaded', () => {
     initTypewriterHero();
@@ -29,36 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeroSlider();
     initMobileHeroSlider();
     initTeamSlider();
+    initServiceSliders();
+    initModal();
 
-    initDropdown({
-        containerSelector: '.dropdown',
-        placeholder: 'Выбор услуги',
-        options: [
-            { value: 'cleaning', label: 'Генеральная уборка' },
-            { value: 'repairment', label: 'Уборка после ремонта' },
-            { value: 'window', label: 'Мойка окон' },
-        ],
-
-        onSelect: (value) => {
-            //тут например fetch
-        }
-    });
     initDropdown({
         containerSelector: '.dropdown-cases',
         options: [
             { value: 'private', label: 'Частная недвижимость' },
             { value: 'simple', label: 'Недвижимость' },
             { value: 'public', label: 'Общественное пространство' },
-        ],
-        onSelect: (value) => {
-        }
-    });
-    initDropdown({
-        containerSelector: '.dropdown-faq',
-        options: [
-            { value: 'cleaning', label: 'Помыть окна' },
-            { value: 'repairment', label: 'Уборка после ремонта' },
-            { value: 'window', label: 'Уборка' },
         ],
         onSelect: (value) => {
         }

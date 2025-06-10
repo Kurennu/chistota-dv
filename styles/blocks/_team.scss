@@ -3,10 +3,18 @@
 .team{
   padding-block: rem(70);
 
-  &__header{
-    margin-bottom: rem(40);
+  @include tablet{
+    padding-top: rem(50);
+    padding-bottom: rem(10);
   }
 
+  &__header{
+    margin-bottom: rem(40);
+
+    @include tablet{
+      margin-bottom: rem(20);
+    }
+  }
 
   &__img{
     border-radius: rem(20);

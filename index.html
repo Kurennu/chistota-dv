@@ -169,8 +169,8 @@
                             </div>
                         </div>
                         <div class="hero__button-wrapper button__wrapper">
-                            <button class="button hero__button">Заказать уборку</button>
-                            <button class="hero__button--arrow button--arrow">
+                            <button class="button hero__button modal-open">Заказать уборку</button>
+                            <button class="hero__button--arrow button--arrow modal-open">
                                 <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15.5713 8.5H1.42915" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                     <path d="M8.50022 15.5711L15.5713 8.5L8.50022 1.42893" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -318,10 +318,10 @@
                                         </button>
                                     </div>
                                     <div class="button__wrapper">
-                                        <button class="hero__button button">
+                                        <button class="hero__button button modal-open">
                                             Заказать уборку
                                         </button>
-                                        <button class="hero__button--arrow button--arrow">
+                                        <button class="hero__button--arrow button--arrow modal-open">
                                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M15.5713 8.5H1.42915" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                                 <path d="M8.50022 15.5711L15.5713 8.5L8.50022 1.42893" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -356,10 +356,10 @@
                                 </div>
                             </div>
                             <div class="button__wrapper hero__button-wrap">
-                                <button class="hero__button button">
+                                <button class="hero__button button modal-open">
                                     Заказать уборку
                                 </button>
-                                <button class="hero__button--arrow button--arrow">
+                                <button class="hero__button--arrow button--arrow modal-open">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M15.5713 8.5H1.42915" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                         <path d="M8.50022 15.5711L15.5713 8.5L8.50022 1.42893" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -453,7 +453,7 @@
                         <div class="carousel__slide"><img src="./images/about/dalpribor.png" width="63" height="63" alt="" loading="lazy"></div>
                     </div>
                 </div>
-                <button class="about__button button">Заказать уборку</button>
+                <button class="about__button button modal-open">Заказать уборку</button>
 
             </div>
         </section>
@@ -491,18 +491,109 @@
 
                                 </div>
                                 <div class="service__pricing">
-                                    <button class="service__button button">Заказать</button>
+                                    <button class="service__button button modal-open">Узнать стоимость</button>
                                     <p class="service__price">от 2 500₽</p>
                                 </div>
                             </div>
-                            <div class="service__card-photo-wrapper">
-                                <div class="service__card-photo">
-                                    <img
-                                            src="./images/service/room.png"
-                                            alt=""
-                                            class="service__card-img"
-                                            width="625" height="467"
-                                    >
+                            <div class="service__splide-wrap">
+                                <div class="service__splide splide">
+                                <div class="service__splide-track splide__track">
+                                    <ul class="service__splide-list splide__list">
+                                        <li class="service__splide-slide splide__slide">
+                                                <img
+                                                        src="./images/service/room.png"
+                                                        alt=""
+                                                        class="service__card-img"
+                                                >
+                                        </li>
+                                        <li class="service__splide-slide splide__slide">
+                                                <img
+                                                        src="./images/service/room.png"
+                                                        alt=""
+                                                        class="service__card-img"
+                                                >
+                                        </li>
+                                        <li class="service__splide-slide splide__slide">
+                                                <img
+                                                        src="./images/service/room.png"
+                                                        alt=""
+                                                        class="service__card-img"
+                                                    >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="service__progress-wrapper">
+                                    <div class="service__progress">
+                                        <div class="service__progress-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-body">
+                            <div class="service__card-main">
+                                <h6 class="service__card-header">Генеральная уборка</h6>
+                                <p class="service__card-subheader">Современные технологии достигли такого уровня, что укрепление и развитие внутренней структуры не даёт нам иного выбора, кроме определения новых принципов формирования материально-технической и кадровой базы! Вот вам яркий пример современных тенденций — перспективное планирование создаёт предпосылки для экспериментов.</p>
+                                <div class="service__card-features">
+                                    <div class="card-features">
+                                        <img
+                                                src="./icons/service/clock.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>3-10 ч</span>
+                                    </div>
+                                    <div class="card-features">
+                                        <img
+                                                src="./icons/service/area.svg"
+                                                alt=""
+                                                class=""
+                                                width="16" height="16"
+                                        >
+                                        <span>до 5 000 м2</span>
+                                    </div>
+
+                                </div>
+                                <div class="service__pricing">
+                                    <button class="service__button button modal-open">Узнать стоимость</button>
+                                    <p class="service__price">от 2 500₽</p>
+                                </div>
+                            </div>
+                            <div class="service__splide-wrap">
+                                <div class="service__splide splide">
+                                    <div class="service__splide-track splide__track">
+                                        <ul class="service__splide-list splide__list">
+                                            <li class="service__splide-slide splide__slide">
+                                                <img
+                                                        src="./images/service/room.png"
+                                                        alt=""
+                                                        class="service__card-img"
+                                                >
+                                            </li>
+                                            <li class="service__splide-slide splide__slide">
+                                                <img
+                                                        src="./images/service/room.png"
+                                                        alt=""
+                                                        class="service__card-img"
+                                                >
+                                            </li>
+                                            <li class="service__splide-slide splide__slide">
+                                                <img
+                                                        src="./images/service/room.png"
+                                                        alt=""
+                                                        class="service__card-img"
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="service__progress-wrapper">
+                                        <div class="service__progress">
+                                            <div class="service__progress-bar"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -534,18 +625,42 @@
 
                                 </div>
                                 <div class="service__pricing">
-                                    <button class="service__button button">Заказать</button>
+                                    <button class="service__button button modal-open">Узнать стоимость</button>
                                     <p class="service__price">от 2 500₽</p>
                                 </div>
                             </div>
-                            <div class="service__card-photo-wrapper">
-                                <div class="service__card-photo">
-                                    <img
-                                            src="./images/service/room.png"
-                                            alt=""
-                                            class="service__card-img"
-                                            width="625" height="467"
-                                    >
+                            <div class="service__splide-wrap">
+                                <div class="service__splide splide">
+                                    <div class="service__splide-track splide__track">
+                                        <ul class="service__splide-list splide__list">
+                                            <li class="service__splide-slide splide__slide">
+                                                <img
+                                                        src="./images/service/room.png"
+                                                        alt=""
+                                                        class="service__card-img"
+                                                >
+                                            </li>
+                                            <li class="service__splide-slide splide__slide">
+                                                <img
+                                                        src="./images/service/room.png"
+                                                        alt=""
+                                                        class="service__card-img"
+                                                >
+                                            </li>
+                                            <li class="service__splide-slide splide__slide">
+                                                <img
+                                                        src="./images/service/room.png"
+                                                        alt=""
+                                                        class="service__card-img"
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="service__progress-wrapper">
+                                        <div class="service__progress">
+                                            <div class="service__progress-bar"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -577,61 +692,42 @@
 
                                 </div>
                                 <div class="service__pricing">
-                                    <button class="service__button button">Заказать</button>
+                                    <button class="service__button button modal-open">Узнать стоимость</button>
                                     <p class="service__price">от 2 500₽</p>
                                 </div>
                             </div>
-                            <div class="service__card-photo-wrapper">
-                                <div class="service__card-photo">
-                                    <img
-                                            src="./images/service/room.png"
-                                            alt=""
-                                            class="service__card-img"
-                                            width="625" height="467"
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service__card">
-                        <div class="service__card-body">
-                            <div class="service__card-main">
-                                <h6 class="service__card-header">Генеральная уборка</h6>
-                                <p class="service__card-subheader">Современные технологии достигли такого уровня, что укрепление и развитие внутренней структуры не даёт нам иного выбора, кроме определения новых принципов формирования материально-технической и кадровой базы! Вот вам яркий пример современных тенденций — перспективное планирование создаёт предпосылки для экспериментов.</p>
-                                <div class="service__card-features">
-                                    <div class="card-features">
-                                        <img
-                                                src="./icons/service/clock.svg"
-                                                alt=""
-                                                class=""
-                                                width="16" height="16"
-                                        >
-                                        <span>3-10 ч</span>
+                            <div class="service__splide-wrap">
+                                <div class="service__splide splide">
+                                    <div class="service__splide-track splide__track">
+                                        <ul class="service__splide-list splide__list">
+                                            <li class="service__splide-slide splide__slide">
+                                                <img
+                                                        src="./images/service/room.png"
+                                                        alt=""
+                                                        class="service__card-img"
+                                                >
+                                            </li>
+                                            <li class="service__splide-slide splide__slide">
+                                                <img
+                                                        src="./images/service/room.png"
+                                                        alt=""
+                                                        class="service__card-img"
+                                                >
+                                            </li>
+                                            <li class="service__splide-slide splide__slide">
+                                                <img
+                                                        src="./images/service/room.png"
+                                                        alt=""
+                                                        class="service__card-img"
+                                                >
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="card-features">
-                                        <img
-                                                src="./icons/service/area.svg"
-                                                alt=""
-                                                class=""
-                                                width="16" height="16"
-                                        >
-                                        <span>до 5 000 м2</span>
+                                    <div class="service__progress-wrapper">
+                                        <div class="service__progress">
+                                            <div class="service__progress-bar"></div>
+                                        </div>
                                     </div>
-
-                                </div>
-                                <div class="service__pricing">
-                                    <button class="service__button button">Заказать</button>
-                                    <p class="service__price">от 2 500₽</p>
-                                </div>
-                            </div>
-                            <div class="service__card-photo-wrapper">
-                                <div class="service__card-photo">
-                                    <img
-                                            src="./images/service/room.png"
-                                            alt=""
-                                            class="service__card-img"
-                                            width="625" height="467"
-                                    >
                                 </div>
                             </div>
                         </div>
@@ -802,7 +898,7 @@
                 </form>
             </div>
         </section>
-        <section class="team container hidden-mobile">
+        <section class="team container">
             <h5 class="team__header h5 splitting-text" data-splitting>Сотрудники <span class="orange">Компании</span></h5>
             <div class="team__splide splide">
                 <div class="team__splide-track splide__track">
@@ -936,7 +1032,7 @@
 
                     <div class="cases__button-wrapper button__wrapper visible-mobile">
                         <button class="button cases__button">Связаться</button>
-                        <button class="cases__button--arrow button--arrow">
+                        <button class="cases__button--arrow button--arrow modal-open">
                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15.5713 8.5H1.42915" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M8.50022 15.5711L15.5713 8.5L8.50022 1.42893" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -1136,7 +1232,7 @@
                             >
                         </button>
                     </div>
-                    <div class="controls hidden-mobile">
+                    <div class="controls hidden-tablet">
                         <button class="reviews__controls-prev controls__button controls__prev">
                             <img
                                     src="./icons/arrow-left.svg"
@@ -1169,7 +1265,7 @@
                         <span id="typewriterCta"></span>
                     </h2>
                     <div class="cta-request__action">
-                        <button class="cta-request__button button--white">
+                        <button class="cta-request__button button--white modal-open">
                             Оставить заявку
                         </button>
                         <div class="cta-request__contacts">
@@ -1315,6 +1411,49 @@
                 </div>
             </div>
         </section>
+
+
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__content">
+                <button class="modal__close"></button>
+                <div class="modal__header">
+                    <h4 class="modal__title">Оставьте <span>заявку!</span></h4>
+                    <p class="modal__subtitle">Мы перезвоним вам в течение 15 минут, чтобы уточнить детали и рассчитать стоимость</p>
+                </div>
+
+                <div class="modal__form">
+                    <div class="modal__form-row">
+                        <div class="modal__form-cell">
+                            <input
+                                    class="modal__form-input"
+                                    placeholder="Имя"
+                            />
+                        </div>
+                        <div class="modal__form-cell">
+                            <input
+                                    class="modal__form-input"
+                                    placeholder="Номер телефона"
+                            />
+                        </div>
+                    </div>
+                    <div class="modal__form-cell--long">
+                        <input
+                                class="modal__form-input--long"
+                                placeholder="Уточните свой вопрос"
+                        />
+                    </div>
+                    <div class="policy">
+                        <input type="checkbox" class="policy__checkbox" name="" checked>
+                        <label for="policy" class="policy__label">
+                            С правилами <a href="/">политики конфиденциальности</a> ознакомлен
+                        </label>
+                    </div>
+                </div>
+                <button class="button">Оставить заявку</button>
+            </div>
+        </div>
+
     </main>
     <footer class="footer">
         <div class="footer__inner container">

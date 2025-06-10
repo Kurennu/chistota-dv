@@ -19,7 +19,6 @@ export function initHeader() {
 
     burgerButton.addEventListener('click', onBurgerButtonClick)
 
-    // === ДОБАВЛЕНА ЛОГИКА ПРОКРУТКИ ===
     let lastScroll = 0
     const scrollThreshold = 100
 
